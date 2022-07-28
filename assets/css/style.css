@@ -1,0 +1,18 @@
+.btn-group-xs>.btn, .btn-xs{
+	font-size: 9pt;
+	border-radius: 3px;
+	padding: 5px !important;
+}
+.float-right{
+	float: right !important;
+}
+
+.bootstrap-table .fixed-table-container .table thead th{
+	border: 1pt solid #c0c0c0 !important;
+	padding: 0;
+}
+
+.bootstrap-table .fixed-table-container .table tbody td{
+	border: 1pt solid #c0c0c0 !important;
+	padding: 0;
+}
