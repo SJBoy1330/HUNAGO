@@ -1,7 +1,7 @@
 
 <div id="wrapper">
 
-    <ul class="sidebar navbar-nav">
+    <ul class="sidebar navbar-nav d-none">
         <li class="nav-item active">
             <a class="nav-link" href="<?=site_url()?>">
             <i class="fas fa-fw fa-home"></i>
