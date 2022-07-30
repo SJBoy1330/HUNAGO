@@ -5,7 +5,7 @@
                 <div class="col-md-12">
                     <form class="mobile-search">
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Pencarian..." style="height: 35px;">
+                            <input type="text" class="form-control mobile-search" placeholder="Pencarian...">
                             <div class="input-group-append">
                                 <button class="btn btn-mobile-search" type="button">
                                     <i class="fa-solid fa-magnifying-glass" style="color: #828282"></i>
@@ -16,8 +16,8 @@
                 </div>
             </div>
         </div>
-        <a data-bs-toggle="modal" data-bs-target="#filterTambahTugas" class="avatar avatar-60 shadow-lg rounded-circle avatar-presensi-solid avatar-kontak position-fixed">
-            <i class="fa-solid fa-plus-large size-26 text-white mt-1"></i>
+        <a data-bs-toggle="modal" data-bs-target="#modalTambahVideo" class="avatar avatar-60 shadow-lg rounded-circle avatar-presensi-solid avatar-kontak position-fixed">
+            <i class="fa-solid fa-plus-large text-white" style="font-size: 20px;"></i>
         </a>
         <?php if ($result) : ?>
             <div class="top-category section-padding">

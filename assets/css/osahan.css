@@ -1584,3 +1584,93 @@ button.btn.btn-mobile-search{
     background-color: #303030;
     height: 35px;
 }
+
+button.btn.btn-login{
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  width: 100px;
+  border-radius: 3px;
+}
+
+button.btn.btn-login:hover{
+  border: 1px solid #FF0000;
+  color: white;
+  background: #FF0000;
+  transition: all 0.1s ease-in-out;
+}
+
+.modal-dialog .modal-content{
+  border-radius: 10px;
+}
+
+button.btn-tidak{
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  width: 100px;
+  border-radius: 3px;
+}
+
+button.btn-tidak:hover{
+  border: 1px solid #FF0000;
+  color: #FF0000;
+  width: 100px;
+  border-radius: 3px;
+}
+
+.form-control{
+  height: 40px !important;
+  border-radius: 5px;
+}
+
+.form-control.mobile-search{
+  height: 35px !important;
+}
+
+.form-control:focus{
+  box-shadow: none !important;
+}
+
+select.form-select{
+  height: 40px !important;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  background-color: #1c1c1c;
+  border-color: 1px solid #303030;
+  height: 40px;
+  color: #444;
+  line-height: 39px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #444;
+  line-height: 39px !important;
+  border: 1px solid #303030;
+  border-radius: 5px;
+}
+
+.select2-container--default .select2-selection--single {
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px;
+}
+
+.select2-container .select2-selection--single {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height: 40px !important;
+  border: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 39px !important;
+  position: absolute !important;
+  top: 1px !important;
+  right: 7px !important;
+  width: 20px !important;
+}
