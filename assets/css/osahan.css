@@ -1674,3 +1674,19 @@ select.form-select{
   right: 7px !important;
   width: 20px !important;
 }
+
+div.col-12.vector-kosong{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  div.col-12.vector-kosong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

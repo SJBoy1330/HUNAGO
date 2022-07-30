@@ -202,7 +202,7 @@ function vector_default($image, $judul = 'Tidak ada data', $text = 'Tidak terdap
     $stts = NULL;
   }
   $html  = '<div ' . $idfix . ' class="row mb-4 ' . $stts . '">';
-  $html .= '<div class="col-12 d-flex justify-content-center align-items-center flex-wrap" style="margin-top: 50px;"><div class="image-kosong">';
+  $html .= '<div class="col-12 vector-kosong" style="margin-top: 50px;"><div class="image-kosong">';
   $html .= '  <img src="' . $image . '" width="275" alt="">';
   $html .= '</div><h5 class="fw-medium mb-2">' . $judul . '</h5>';
   $html .= '<p class="fw-normal text-secondary text-center size-14">' . $text . '</p>';
