@@ -89,3 +89,8 @@ ERROR - 2022-07-30 10:23:44 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 10:23:44 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 10:23:44 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 10:23:44 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 14:57:34 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\views\index.php 70
+ERROR - 2022-07-30 14:57:36 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\views\index.php 70
+ERROR - 2022-07-30 14:58:20 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\views\index.php 22
+ERROR - 2022-07-30 14:58:21 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\views\index.php 71
+ERROR - 2022-07-30 14:58:31 --> Severity: Warning --> count(): Parameter must be an array or an object that implements Countable C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\views\index.php 71

@@ -67,4 +67,11 @@
                 </div>
             </div>
         <?php endif; ?>
-        <?= vector_default(base_url('assets/img/vector/vector_video.svg'), 'Tidak ada video', 'Klik tombol pada pojok kanan bawah untuk menambahkan video!', '#vector_video', count($result)); ?>
+        <?php
+        if (!$result) {
+            $cnt = 0;
+        } else {
+            $cnt = count($result);
+        }
+        ?>
+        <?= vector_default(base_url('assets/img/vector/vector_video.svg'), 'Tidak ada video', 'Klik tombol pada pojok kanan bawah untuk menambahkan video!', '#vector_video', $cnt); ?>
