@@ -193,9 +193,7 @@
 
 <script src="<?= base_url("assets/vendor/owl-carousel/owl.carousel.js") ?>"></script>
 
-<script src="<?= base_url("assets/js/custom.js") ?>"></script>
 <script src="<?= base_url('assets/vendor/rocket-loader/rocket-loader.min.js') ?>"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73014a037fce6bc1","version":"2022.6.0","r":1,"token":"dd471ab1978346bbb991feaa79e6ce5c","si":100}' crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script>

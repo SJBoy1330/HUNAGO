@@ -2,17 +2,26 @@
 
 class Welcome extends MY_Admin
 {
-
+    protected $id_user = '';
+    protected $role = '';
     function __construct()
     {
         parent::__construct();
         // LOAD MODEL
         $this->load->model('video_m');
         $this->load->model('video_kategori_m');
+        $this->load->model('user_m');
+
+        // LOAD SESSION
+        $this->id_user = $this->session->userdata('hunago_id_user');
+        $this->role = $this->session->userdata('hunago_role');
     }
 
     public function index()
     {
+        if ($this->role > 1) {
+            redirect('dashboard');
+        }
         // LOAD TITLE
         $this->data['pagetitle'] = "Welcome";
 
@@ -39,5 +48,56 @@ class Welcome extends MY_Admin
         $this->data['content'] = $this->load->view('index', $mydata, true);
 
         $this->display();
+    }
+
+    public function login_proses()
+    {
+        $arrVar['username']    = 'ID Pengguna';
+        $arrVar['kata_sandi'] = 'Kata sandi';
+        foreach ($arrVar as $var => $value) {
+            $$var = $this->input->post($var);
+            if (!$$var) {
+                $data['required'][] = ['req_' . $var, $value . ' tidak boleh kosong !'];
+                $arrAccess[] = false;
+            } else {
+                $arrAccess[] = true;
+            }
+        }
+
+        if (!in_array(false, $arrAccess)) {
+            $get_user = $this->user_m->get_single(array('username' => $username));
+            if ($get_user) {
+                $password = hash('sha256', $username . $kata_sandi);
+                if ($password == $get_user->password) {
+                    $arrSession['hunago_id_user'] = $get_user->id_user;
+                    $arrSession['hunago_role'] = $get_user->tipe;
+
+
+                    $this->session->set_userdata($arrSession);
+                    $data['status'] = TRUE;
+                    $data['alert']['title'] = 'PEMBERITAHUAN';
+                    $data['alert']['message'] = 'Berhasil Masuk!';
+                    $data['redirect'] = base_url('dashboard');
+                    echo json_encode($data);
+                    exit;
+                } else {
+                    $data['status'] = FALSE;
+                    $data['alert']['title'] = 'PERINGATAN';
+                    $data['alert']['message'] = 'Kata sandi salah!';
+                    echo json_encode($data);
+                    exit;
+                }
+            } else {
+                $data['status'] = FALSE;
+                $data['alert']['title'] = 'PERINGATAN';
+                $data['alert']['message'] = 'User tidak di temukan!';
+                echo json_encode($data);
+                exit;
+            }
+        } else {
+            $data['status'] = FALSE;
+            echo json_encode($data);
+            exit;
+        }
     }
 }

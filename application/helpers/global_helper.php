@@ -122,6 +122,23 @@ function breadcrumb($parent, $arrchild = array())
 
   return $str;
 }
+function is_logged_in()
+{
+
+  $obj = &get_instance();
+
+  $base_url = $obj->config->item('base_url');
+
+  $ci = get_instance();
+
+  if ($ci->session->userdata('hunago_id_user')) {
+    if (!in_array($ci->session->userdata('hunago_role'), [1, 2, 3])) {
+      redirect('welcome');
+    }
+  } else {
+    redirect('welcome');
+  }
+}
 
 function reverse_date($date)
 {

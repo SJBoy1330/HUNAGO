@@ -351,3 +351,28 @@ ERROR - 2022-08-01 17:42:32 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 17:42:32 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 17:44:19 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 17:44:19 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 18:49:52 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-08-01 18:49:53 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-08-01 18:49:53 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-08-01 19:13:32 --> Severity: Notice --> Undefined property: CI::$user_m C:\xampp\htdocs\oitoc\HUNAGO\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 19:13:32 --> Severity: error --> Exception: Call to a member function get_single() on null C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\controllers\Welcome.php 67
+ERROR - 2022-08-01 19:13:46 --> Severity: Notice --> Undefined property: CI::$user_m C:\xampp\htdocs\oitoc\HUNAGO\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 19:13:46 --> Severity: error --> Exception: Call to a member function get_single() on null C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\controllers\Welcome.php 67
+ERROR - 2022-08-01 19:14:03 --> Severity: Notice --> Undefined property: CI::$user_m C:\xampp\htdocs\oitoc\HUNAGO\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 19:14:03 --> Severity: error --> Exception: Call to a member function get_single() on null C:\xampp\htdocs\oitoc\HUNAGO\modules\welcome\controllers\Welcome.php 67
+ERROR - 2022-08-01 19:17:35 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:17:35 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:18:12 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:18:12 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:18:33 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:18:33 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:19:12 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:19:12 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:19:35 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:19:35 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:20:06 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:20:06 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:20:56 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:20:56 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:21:32 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:21:32 --> 404 Page Not Found: /index

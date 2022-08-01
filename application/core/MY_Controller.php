@@ -104,7 +104,7 @@ class MY_Mimin extends MY_Controller
     {
         parent::__construct();
         $this->path_theme = 'themev_admin';
-
+        is_logged_in();
 
         // if (strpos(current_url(), 'api')){
 
