@@ -1,15 +1,15 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
-class Backend_ctl extends MY_Admin
+class Backend_ctl extends MY_Mimin
 {
 
     function __construct()
     {
         parent::__construct();
 
-        if (!$this->oitocauth->is_loggedin()) {
-            redirect(site_url('auth/login_ctl'));
-        }
+        // if (!$this->oitocauth->is_loggedin()) {
+        //     redirect(site_url('auth/login_ctl'));
+        // }
 
         // LOAD MODEL 
         $this->load->model('video_m');

@@ -32,12 +32,12 @@ class MY_Controller extends MX_Controller
      */
     public function __construct()
     {
-        
+
         parent::__construct();
 
         // This function returns the main CodeIgniter object.
         // Normally, to call any of the available CodeIgniter object or pre defined library classes then you need to declare.
-        $CI =& get_instance();
+        $CI = &get_instance();
 
         // Copyright year calculation for the footer
         $begin = 2019;
@@ -46,30 +46,30 @@ class MY_Controller extends MX_Controller
 
         // Copyright
         $this->data['copyright'] = $date;
-
-
     }
 
-    function __nocache() {
-        $this->output->set_header('Last-Modified:'.gmdate('D, d M Y H:i:s').'GMT');
+    function __nocache()
+    {
+        $this->output->set_header('Last-Modified:' . gmdate('D, d M Y H:i:s') . 'GMT');
         $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
-        $this->output->set_header('Cache-Control: post-check=0, pre-check=0',false);
+        $this->output->set_header('Cache-Control: post-check=0, pre-check=0', false);
         $this->output->set_header('Pragma: no-cache');
     }
-
 }
 
-class MY_Admin extends MY_Controller{
+class MY_Admin extends MY_Controller
+{
 
-    public function __construct(){
+    public function __construct()
+    {
         parent::__construct();
-        $this->path_theme='themev';
-        
+        $this->path_theme = 'themev';
+
 
         // if (strpos(current_url(), 'api')){
-        
+
         // }else if (strpos(current_url(), 'login_ctl')){
-            
+
         //     if (!strpos(current_url(), 'logout')){
         //         if ($this->oitocauth->is_loggedin()){
         //             redirect(site_url('dashboard'));
@@ -83,20 +83,61 @@ class MY_Admin extends MY_Controller{
 
     }
 
-    function display($name=''){
-        
-        if ($name == 'auth'){
-            $tpl=$this->path_theme.'/login';
-        }else{
-            $tpl=$this->path_theme.'/layout_single';
+    function display($name = '')
+    {
+
+        if ($name == 'auth') {
+            $tpl = $this->path_theme . '/login';
+        } else {
+            $tpl = $this->path_theme . '/layout_single';
         }
-        
-        $this->load->view($tpl,$this->data);
+
+        $this->load->view($tpl, $this->data);
+    }
+}
+
+
+class MY_Mimin extends MY_Controller
+{
+
+    public function __construct()
+    {
+        parent::__construct();
+        $this->path_theme = 'themev_admin';
+
+
+        // if (strpos(current_url(), 'api')){
+
+        // }else if (strpos(current_url(), 'login_ctl')){
+
+        //     if (!strpos(current_url(), 'logout')){
+        //         if ($this->oitocauth->is_loggedin()){
+        //             redirect(site_url('dashboard'));
+        //         }
+        //     }
+        // }else{
+        //     if (!$this->oitocauth->is_loggedin()){
+        //         redirect(site_url('auth/login_ctl'));
+        //     }
+        // }
+
+    }
+
+    function display($name = '')
+    {
+
+        if ($name == 'auth') {
+            $tpl = $this->path_theme . '/login';
+        } else {
+            $tpl = $this->path_theme . '/layout_single';
+        }
+
+        $this->load->view($tpl, $this->data);
     }
 }
 
 // Backend controller
-require_once(APPPATH.'core/Backend_Controller.php');
+require_once(APPPATH . 'core/Backend_Controller.php');
 
 // Frontend controller
-require_once(APPPATH.'core/Frontend_Controller.php');
+require_once(APPPATH . 'core/Frontend_Controller.php');

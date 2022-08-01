@@ -1,4 +1,4 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<?php defined('BASEPATH') or exit('No direct script access allowed'); ?>
 
 ERROR - 2022-07-30 00:52:53 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 00:56:16 --> 404 Page Not Found: ../../modules/auth/controllers//index
@@ -110,3 +110,18 @@ ERROR - 2022-07-30 20:54:53 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 20:54:53 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 20:54:54 --> 404 Page Not Found: /index
 ERROR - 2022-07-30 20:54:54 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:18:07 --> 404 Page Not Found: ../../modules/media/controllers//index
+ERROR - 2022-07-30 19:18:07 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:18:07 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:01 --> 404 Page Not Found: ../../modules/media/controllers//index
+ERROR - 2022-07-30 19:29:01 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:01 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:33 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:34 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:34 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:36 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-07-30 19:29:36 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:29:36 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:30:17 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-07-30 19:30:18 --> 404 Page Not Found: /index
+ERROR - 2022-07-30 19:30:18 --> 404 Page Not Found: /index

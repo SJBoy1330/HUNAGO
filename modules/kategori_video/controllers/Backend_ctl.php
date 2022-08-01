@@ -1,25 +1,25 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php defined('BASEPATH') or exit('No direct script access allowed');
 
-class Backend_ctl extends MY_Admin {
+class Backend_ctl extends MY_Mimin
+{
 
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
-   
     }
 
-    public function index(){
+    public function index()
+    {
 
-        $this->data['pagetitle'] = "Kategori video"; 
+        $this->data['pagetitle'] = "Kategori video";
 
         $mydata['parent'] = 'Kategori Video';
 
 
         $mydata['result'] = '';
 
-        $this->data['content']=$this->load->view('index',$mydata,true);
+        $this->data['content'] = $this->load->view('index', $mydata, true);
 
         $this->display();
-
     }
-
 }

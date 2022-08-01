@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -58,6 +58,11 @@ $route['kategori_video/(:any)/(:any)'] = 'kategori_video/backend_ctl/$1/$2';
 $route['video'] = 'video/backend_ctl';
 $route['video/(:any)'] = 'video/backend_ctl/$1';
 $route['video/(:any)/(:any)'] = 'video/backend_ctl/$1/$2';
+
+
+$route['dashboard'] = 'dashboard/backend_ctl';
+$route['dashboard/(:any)'] = 'dashboard/backend_ctl/$1';
+$route['dashboard/(:any)/(:any)'] = 'dashboard/backend_ctl/$1/$2';
 
 $route['profile'] = 'profile/backend_ctl';
 
