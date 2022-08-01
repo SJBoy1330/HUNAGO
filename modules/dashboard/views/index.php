@@ -26,16 +26,15 @@
 						<?php if ($kategori) : ?>
 							<div class="row">
 								<div class="col-md-12">
-									<div class="tab base_tipe">
-										<a class="tablinks" onclick="get_kategori(this,'all')">
-											<div class="tag border tipe active">
+									<div class="scrollmenu mb-4 base_tipe">
+										<a onclick="get_kategori(this,'all')">
+											<div class="tag tipe active">
 												<span class="text-uppercase">Semua</span>
 											</div>
 										</a>
-										<!-- <button class=" active tipe">Semua</button> -->
 										<?php foreach ($kategori as $row) : ?>
-											<a class="tablinks" onclick="get_kategori(this,<?= $row->id_kategori; ?>)">
-												<div class="tag border tipe">
+											<a onclick="get_kategori(this,<?= $row->id_kategori; ?>)">
+												<div class="tag tipe">
 													<span class="text-uppercase"><?= $row->nama; ?></span>
 												</div>
 											</a>

@@ -448,3 +448,12 @@ ERROR - 2022-08-01 20:32:39 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 20:46:20 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 20:54:16 --> Query error: Unknown column 'name' in 'field list' - Invalid query: INSERT INTO `video_kategori` (`name`) VALUES ('NGARANG')
 ERROR - 2022-08-01 20:55:05 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 21:02:55 --> Severity: error --> Exception: syntax error, unexpected '?>' C:\xampp\htdocs\oitoc\hunago\modules\dashboard\views\index.php 36
+ERROR - 2022-08-01 21:02:57 --> Severity: error --> Exception: syntax error, unexpected '?>' C:\xampp\htdocs\oitoc\hunago\modules\dashboard\views\index.php 36
+ERROR - 2022-08-01 21:04:05 --> Severity: error --> Exception: syntax error, unexpected '?>' C:\xampp\htdocs\oitoc\hunago\modules\dashboard\views\index.php 36
+ERROR - 2022-08-01 21:04:07 --> Severity: error --> Exception: syntax error, unexpected '?>' C:\xampp\htdocs\oitoc\hunago\modules\dashboard\views\index.php 36
+ERROR - 2022-08-01 21:04:10 --> Severity: error --> Exception: syntax error, unexpected '?>' C:\xampp\htdocs\oitoc\hunago\modules\dashboard\views\index.php 36
+ERROR - 2022-08-01 21:08:12 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 21:08:13 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 21:08:24 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 21:08:24 --> 404 Page Not Found: /index
