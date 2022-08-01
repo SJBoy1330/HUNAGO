@@ -22,46 +22,25 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Game Petualangan Aksi</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Musik Mix</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Kartun</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Film</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Animasi</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
+                                    <?php if ($result) : ?>
+                                        <?php $no = 1;
+                                        foreach ($result as $row) : ?>
+                                            <tr>
+                                                <th scope="row"><?= $no++; ?></th>
+                                                <td><?= $row->nama; ?></td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                    <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach; ?>
+                                    <?php else : ?>
+                                        <tr>
+                                            <td colspan="3">
+                                                <center>Tidak ada data kategori</center>
+                                            </td>
+                                        </tr>
+                                    <?php endif; ?>
                                 </tbody>
                             </table>
                         </div>

@@ -71,6 +71,13 @@ class Welcome extends MY_Admin
                 if ($password == $get_user->password) {
                     $arrSession['hunago_id_user'] = $get_user->id_user;
                     $arrSession['hunago_role'] = $get_user->tipe;
+                    $arrSession['hunago_name'] = $get_user->nama;
+                    if ($get_user->foto != NULL) {
+                        $arrSession['hunago_foto'] = base_url('assets/photos/' . $get_user->foto);
+                    } else {
+                        $arrSession['hunago_foto'] = base_url('assets/img/profil_default.png');
+                    }
+
 
 
                     $this->session->set_userdata($arrSession);
@@ -99,5 +106,15 @@ class Welcome extends MY_Admin
             echo json_encode($data);
             exit;
         }
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('hunago_id_user');
+        $this->session->unset_userdata('hunago_role');
+        $this->session->unset_userdata('hunago_name');
+        $this->session->unset_userdata('hunago_foto');
+
+        redirect('welcome');
     }
 }

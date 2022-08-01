@@ -54,10 +54,10 @@
         </form>
         <ul class="navbar-nav ml-auto osahan-right-navbar">
             <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
-                <?php if ($this->session->userdata('id_user')) : ?>
+                <?php if ($this->session->userdata('hunago_id_user')) : ?>
                     <a class="nav-link dropdown-toggle user-dropdown-link" href="#" role="button">
-                        <img alt="Avatar" src="<?= base_url("assets/img/user.png") ?>">
-                        Osahan
+                        <img alt="Avatar" src="<?= $this->session->userdata('hunago_foto'); ?>">
+                        <?= tampil_text($this->session->userdata('hunago_name'), 10); ?>
                     </a>
                 <?php else : ?>
 
