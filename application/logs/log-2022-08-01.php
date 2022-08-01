@@ -376,3 +376,30 @@ ERROR - 2022-08-01 19:20:56 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 19:20:56 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 19:21:32 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 19:21:32 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:31:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:31:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:31:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:31:23 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-08-01 19:31:23 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:31:23 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:32:17 --> 404 Page Not Found: ../../modules/auth/controllers//index
+ERROR - 2022-08-01 19:32:17 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:32:17 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'foto' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 30
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'nama' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 48
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'username' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 54
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'username' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 90
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'nama' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 100
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'alamat' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 111
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'telp' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 121
+ERROR - 2022-08-01 19:32:23 --> Severity: Notice --> Trying to get property 'email' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 131
+ERROR - 2022-08-01 19:32:23 --> 404 Page Not Found: ../../modules/media/controllers//index
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'foto' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 30
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'nama' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 48
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'username' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 54
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'username' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 90
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'nama' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 100
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'alamat' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 111
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'telp' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 121
+ERROR - 2022-08-01 19:32:26 --> Severity: Notice --> Trying to get property 'email' of non-object C:\xampp\htdocs\oitoc\HUNAGO\modules\profile\views\index.php 131
+ERROR - 2022-08-01 19:32:26 --> 404 Page Not Found: ../../modules/media/controllers//index
