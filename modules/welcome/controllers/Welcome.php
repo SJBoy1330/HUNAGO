@@ -30,6 +30,8 @@ class Welcome extends MY_Admin
 
         // LOAD CSS 
         $this->data['css_add'][] = '<link rel="stylesheet" href="' . base_url('assets/css/page/dashboard.css') . '">';
+        // LOAD JS
+        $this->data['js_add'][] = '<script src="' . base_url() . 'assets/js/page/dashboard/dashboard.js"></script>';
         // DEKLARASI VARIABEL
         $param['arrjoin']['video_kategori']['statement'] = 'video.id_kategori = video_kategori.id_kategori';
         $param['arrjoin']['video_kategori']['type'] = 'LEFT';

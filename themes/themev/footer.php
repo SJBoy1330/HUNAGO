@@ -93,6 +93,17 @@
         $('.js-example-basic-single').select2();
     });
 </script>
+<?php
+
+if (isset($js_add) && is_array($js_add)) {
+    foreach ($js_add as $js) {
+        echo $js;
+    }
+} else {
+    echo (isset($js_add) && ($js_add != "") ? $js_add : "");
+}
+
+?>
 </body>
 
 </html>

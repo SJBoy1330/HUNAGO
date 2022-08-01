@@ -29,8 +29,8 @@
                                                 <th scope="row"><?= $no++; ?></th>
                                                 <td><?= $row->nama; ?></td>
                                                 <td>
-                                                    <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                    <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                    <button class="btn btn-sm btn-light" onclick="edit(<?= $row->id_kategori; ?>)"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                    <a href="<?= base_url('kategori_video/hapus_kategori/' . $row->id_kategori) ?>" class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></a>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>

@@ -72,4 +72,25 @@ class Backend_ctl extends MY_Mimin
             exit;
         }
     }
+    public function hapus_kategori($id_kategori = NULL)
+    {
+        if ($id_kategori == NULL) {
+            $this->session->set_flashdata('judul', 'PERINGATAN');
+            $this->session->set_flashdata('message', 'Gagal menghapus kategori');
+            $this->session->set_flashdata('icon', 'warning');
+        } else {
+            $delete = $this->video_kategori_m->delete($id_kategori);
+            if ($delete) {
+                $this->session->set_flashdata('judul', 'PEMBERITAHUAN');
+                $this->session->set_flashdata('message', 'Berhasil menghapus kategori');
+                $this->session->set_flashdata('icon', 'success');
+            } else {
+                $this->session->set_flashdata('judul', 'PERINGATAN');
+                $this->session->set_flashdata('message', 'Gagal menghapus kategori');
+                $this->session->set_flashdata('icon', 'warning');
+            }
+        }
+
+        redirect('kategori_video');
+    }
 }
