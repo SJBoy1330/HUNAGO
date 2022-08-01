@@ -12,8 +12,8 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="card-body mx-3">
-                            <table class="table table-borderless text-center text-white">
+                        <div class="card-body mx-3" id="parent_kategori">
+                            <table class="table table-borderless text-center text-white" id="reload_kategori">
                                 <thead>
                                     <tr>
                                         <th scope="col" style="width: 50px;">No</th>
@@ -47,6 +47,27 @@
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalTambahKategori" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <form method="post" action="<?= base_url('kategori_video/tambah_kategori') ?>" id="tambah_kategori" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Tambah Kategori Video</h5>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3" id="req_nama">
+                    <label for="kategori" class="form-label mb-1" style="font-size: 15px;">Kategori Video</label>
+                    <input type="text" class="form-control" id="kategori" name="nama" placeholder="Masukkan kategori video" autocomplete="off">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
+                <button type="button" id="button_tambah_kategori" onclick="submit_form(this,'#tambah_kategori',1)" class="btn btn-primary">Iya</button>
+            </div>
+        </form>
     </div>
 </div>

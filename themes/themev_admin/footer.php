@@ -30,25 +30,7 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-<div class="modal fade" id="modalTambahKategori" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLoginLabel">Tambah Kategori Video</h5>
-            </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Kategori Video</label>
-                    <input type="text" class="form-control" placeholder="Masukkan kategori video">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary">Iya</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <div class="modal fade" id="modalManagemenVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

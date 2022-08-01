@@ -446,3 +446,5 @@ ERROR - 2022-08-01 20:29:21 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 20:32:39 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 20:32:39 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 20:46:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 20:54:16 --> Query error: Unknown column 'name' in 'field list' - Invalid query: INSERT INTO `video_kategori` (`name`) VALUES ('NGARANG')
+ERROR - 2022-08-01 20:55:05 --> 404 Page Not Found: /index
