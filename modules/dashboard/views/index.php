@@ -1,126 +1,129 @@
 <div id="content-wrapper">
-    <div class="container-fluid admin pb-0">
-        <div class="top-mobile-search">
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="mobile-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control mobile-search" placeholder="Pencarian...">
-                            <div class="input-group-append">
-                                <button class="btn btn-mobile-search" type="button">
-                                    <i class="fa-solid fa-magnifying-glass" style="color: #828282"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <a data-bs-toggle="modal" data-bs-target="#modalTambahVideo" class="avatar avatar-60 shadow-lg rounded-circle avatar-presensi-solid avatar-kontak position-fixed">
-            <i class="fa-solid fa-plus-large text-white" style="font-size: 20px;"></i>
-        </a>
-		<div class="top-category section-padding">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="tab">
-							<button class="tablinks active">Semua</button>
-							<button class="tablinks">Games</button>
-							<button class="tablinks">Musik</button>
-							<button class="tablinks">Live</button>
-							<button class="tablinks">Video Mix</button>
-							<button class="tablinks">Kartun</button>
-							<button class="tablinks">Game petualangan aksi</button>
-							<button class="tablinks">Baru diupload</button>
-							<button class="tablinks">Ditonton</button>
-							<button class="tablinks">Baru untuk Anda</button>
+	<div class="container-fluid admin pb-0">
+		<div class="top-mobile-search">
+			<div class="row">
+				<div class="col-md-12">
+					<form class="mobile-search">
+						<div class="input-group">
+							<input type="text" class="form-control mobile-search" placeholder="Pencarian...">
+							<div class="input-group-append">
+								<button class="btn btn-mobile-search" type="button">
+									<i class="fa-solid fa-magnifying-glass" style="color: #828282"></i>
+								</button>
+							</div>
 						</div>
-					</div>
+					</form>
 				</div>
-				<hr>
-			<div class="video-block section-padding">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="main-title">
-							<h6>Video Terbaru</h6>
-						</div>
-					</div>
-					<div class="col-xl-3 col-sm-6 mb-3">
-						<div class="video-card">
-							<div class="video-card-image">
-								<a class="play-icon" href="#" target="_blank"><i class="fas fa-play-circle"></i></a>
-								<a href="#"><img class="img-fluid" src="<?= base_url('assets/img/v1.png')?>" alt=""></a>
-							</div>
-							<div class="video-card-body">
-								<div class="video-title">
-									<a href="#">There are many variations of passages of Lorem</a>
-								</div>
-								<div class="video-page text-success mb-1">
-									Education 
-								</div>
-								<div class="video-view">
-									<i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;11 Months ago
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-sm-6 mb-3">
-						<div class="video-card">
-							<div class="video-card-image">
-								<a class="play-icon" href="#" target="_blank"><i class="fas fa-play-circle"></i></a>
-								<a href="#"><img class="img-fluid" src="<?= base_url('assets/img/v2.png')?>" alt=""></a>
-							</div>
-							<div class="video-card-body">
-								<div class="video-title">
-									<a href="#">There are many variations of passages of Lorem</a>
-								</div>
-								<div class="video-page text-success mb-1">
-									Education 
-								</div>
-								<div class="video-view">
-									<i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;11 Months ago
+			</div>
+		</div>
+		<a data-bs-toggle="modal" data-bs-target="#modalTambahVideo" class="avatar avatar-60 shadow-lg rounded-circle avatar-presensi-solid avatar-kontak position-fixed">
+			<i class="fa-solid fa-plus-large text-white" style="font-size: 20px;"></i>
+		</a>
+		<div id="parent_video">
+			<div id="reload_video">
+				<?php if ($result) : ?>
+					<div class="top-category section-padding">
+						<?php if ($kategori) : ?>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="tab base_tipe">
+										<a class="tablinks" onclick="get_kategori(this,'all')">
+											<div class="tag border tipe active">
+												<span class="text-uppercase">Semua</span>
+											</div>
+										</a>
+										<!-- <button class=" active tipe">Semua</button> -->
+										<?php foreach ($kategori as $row) : ?>
+											<a class="tablinks" onclick="get_kategori(this,<?= $row->id_kategori; ?>)">
+												<div class="tag border tipe">
+													<span class="text-uppercase"><?= $row->nama; ?></span>
+												</div>
+											</a>
+										<?php endforeach; ?>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-xl-3 col-sm-6 mb-3">
-						<div class="video-card">
-							<div class="video-card-image">
-								<a class="play-icon" href="#" target="_blank"><i class="fas fa-play-circle"></i></a>
-								<a href="#"><img class="img-fluid" src="<?= base_url('assets/img/v3.png')?>" alt=""></a>
-							</div>
-							<div class="video-card-body">
-								<div class="video-title">
-									<a href="#">There are many variations of passages of Lorem</a>
+							<hr>
+						<?php endif; ?>
+						<hr>
+						<div class="video-block section-padding" id="parenting_tipe">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="main-title">
+										<h6>Video Terbaru</h6>
+									</div>
 								</div>
-								<div class="video-page text-success mb-1">
-									Education 
-								</div>
-								<div class="video-view">
-									<i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;11 Months ago
-								</div>
+								<?php foreach ($result as $row) : ?>
+									<div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>">
+										<div class="video-card">
+											<div class="video-card-image">
+												<a class="play-icon" href="<?= $row->url; ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
+												<a href="#"><img class="img-fluid" src="<?= $row->thumbnail; ?>" alt=""></a>
+											</div>
+											<div class="video-card-body">
+												<div class="video-title">
+													<a href="<?= site_url('video/single') ?>"><?= $row->judul; ?></a>
+												</div>
+												<div class="video-page text-success">
+													<?= $row->kategori; ?>
+												</div>
+												<div class="video-view">
+													<i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;<?= nice_time($row->create_date); ?>
+												</div>
+											</div>
+										</div>
+									</div>
+								<?php endforeach; ?>
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-sm-6 mb-3">
-						<div class="video-card">
-							<div class="video-card-image">
-								<a class="play-icon" href="#" target="_blank"><i class="fas fa-play-circle"></i></a>
-								<a href="#"><img class="img-fluid" src="<?= base_url('assets/img/v4.png')?>" alt=""></a>
-							</div>
-							<div class="video-card-body">
-								<div class="video-title">
-									<a href="#">There are many variations of passages of Lorem</a>
-								</div>
-								<div class="video-page text-success mb-1">
-									Education 
-								</div>
-								<div class="video-view">
-									<i class="fa-regular fa-calendar-days"></i>&nbsp;&nbsp;11 Months ago
-								</div>
-							</div>
-						</div>
-					</div>
+				<?php endif; ?>
+				<?php
+				if (!$result) {
+					$cnt = 0;
+				} else {
+					$cnt = count($result);
+				}
+				?>
+				<?= vector_default(base_url('assets/img/vector/vector_video.svg'), 'Tidak ada video', 'Klik tombol pada pojok kanan bawah untuk menambahkan video!', 'vector_video', $cnt); ?>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="modal fade" id="modalTambahVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalLoginLabel">Tambah Video</h5>
+			</div>
+			<form method="post" action="<?= base_url('dashboard/tambah_video'); ?>" id="tambah_video" class="modal-body">
+				<div class="mb-3" id="req_judul">
+					<label for="judul_video" class="form-label mb-1" style="font-size: 15px;">Judul video</label>
+					<input type="text" class="form-control" name="judul" id="judul_video" placeholder="Masukkan Judul" autocomplete="off">
 				</div>
+				<div class="mb-3" id="req_url">
+					<label for="link_video" class="form-label mb-1" style="font-size: 15px;">Link video</label>
+					<input type="text" class="form-control" id="link_video" name="url" placeholder="Masukkan Url" autocomplete="off">
+				</div>
+				<div class="mb-3 d-flex flex-column" id="req_id_kategori">
+					<label for="kategori" class="form-label mb-1" style="font-size: 15px;">Kategori</label>
+					<select class="form-select js-example-basic-single" name="id_kategori" id="kategori" aria-label="Default select example" placeholder="Pilih kategori">
+						<?php if ($kategori) : ?>
+							<option value="">Pilih kategori</option>
+							<?php foreach ($kategori as $row) : ?>
+								<option value="<?= $row->id_kategori; ?>"><?= $row->nama; ?></option>
+							<?php endforeach; ?>
+						<?php else : ?>
+							<option value="">Kategori tidak tersedia</option>
+						<?php endif; ?>
+					</select>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
+				<button id="button_tambah_video" onclick="submit_form(this,'#tambah_video',2)" type="button" class="btn btn-primary">Simpan</button>
 			</div>
 		</div>
 	</div>

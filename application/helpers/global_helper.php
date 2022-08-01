@@ -32,7 +32,19 @@ function parse_raw_http_request(array &$a_data)
     $a_data[$matches[1]] = $matches[2];
   }
 }
+function get_id_yt($url)
+{
+  if (strpos($url, "watch?v=")) {
+    $bagian = parse_url($url); // parsekan url link youtube menjadi bagian-bagian 
+    parse_str($bagian['query'], $parameter); // mengambil bagian query atau parameter
+    $id_youtube =  $parameter['v']; //mengambil parameter v dari variable $parameter
+  } else {
+    $array = explode("/", $url);
+    $id_youtube = $array[3];
+  }
 
+  return $id_youtube;
+}
 function http_parse_headers($header)
 {
   $retVal = array();
@@ -146,7 +158,19 @@ function reverse_date($date)
   $newdate = $d . "-" . $m . "-" . $y;
   return $newdate;
 }
+function set_active($uri1, $controller, $uri2 = "", $arrtarget = array())
+{
 
+  if ($uri1 == $controller) {
+    if ($uri2 != "") {
+      if (in_array($uri2, $arrtarget)) {
+        return "active";
+      }
+    } else {
+      return "active";
+    }
+  }
+}
 function reverse_fulldate($date)
 {
   list($date, $time) = explode(" ", $date);

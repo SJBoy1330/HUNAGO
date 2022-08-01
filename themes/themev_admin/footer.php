@@ -20,58 +20,7 @@
 </footer> -->
 <!-- Button trigger modal -->
 <!-- Modal -->
-<div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLoginLabel">Login Hunago</h5>
-            </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Username</label>
-                    <input type="text" class="form-control" placeholder="Masukkan username">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Kata sandi</label>
-                    <input type="password" class="form-control" placeholder="Masukkan kata sandi">
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary">Iya</button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="modal fade" id="modalTambahVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalLoginLabel">Tambah Video</h5>
-            </div>
-            <div class="modal-body">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Link video</label>
-                    <input type="text" class="form-control" placeholder="Masukkan username">
-                </div>
-                <div class="mb-3 d-flex flex-column">
-                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Kategori</label>
-                    <select class="form-select js-example-basic-single" aria-label="Default select example" placeholder="Pilih kategori">
-                        <option selected>Pilih kategori</option>
-                        <option value="1">Game</option>
-                        <option value="2">Kartun</option>
-                        <option value="3">Komedi</option>
-                    </select>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
-                <button type="button" class="btn btn-primary">Iya</button>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 
 </div>
@@ -193,8 +142,37 @@
 
 <script src="<?= base_url("assets/vendor/owl-carousel/owl.carousel.js") ?>"></script>
 
+<script>
+    var BASE_URL = baseUrl = '<?= base_url(); ?>';
+    var loading_scene = new bootstrap.Modal(document.getElementById("loading_scene"), {});
+    var loading = $('#loading_scene');
+    var css_button = 'btn btn-block btn-danger';
+    var html_loader = '<div class="row loader">\
+                    <div class="col-12 loader">\
+                        <div class="loadingio-spinner-double-ring-x5jbbv5x43o">\
+                            <div class="ldio-wmpldorvik">\
+                                <div></div>\
+                                <div></div>\
+                                <div>\
+                                    <div></div>\
+                                </div>\
+                                <div>\
+                                    <div></div>\
+                                </div>\
+                            </div>\
+                        </div>\
+                        <p class="size-20 fw-medium loader"> Loading... </p>\
+                    </div>\
+                </div>';
+</script>
 <script src="<?= base_url('assets/vendor/rocket-loader/rocket-loader.min.js') ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<script src="<?= base_url('assets/js/alert/sweetalert2.all.min.js') ?>"></script>
+<script src="<?= base_url('assets/js/alert/scriptalert.js') ?>"></script>
+
+<script src="<?= base_url("assets/js/page/function.js") ?>"></script>
 
 <script>
     $(document).ready(function() {
@@ -209,6 +187,18 @@
         $('.js-kategori').select2();
     });
 </script>
+
+<?php
+
+if (isset($js_add) && is_array($js_add)) {
+    foreach ($js_add as $js) {
+        echo $js;
+    }
+} else {
+    echo (isset($js_add) && ($js_add != "") ? $js_add : "");
+}
+
+?>
 </body>
 
 </html>
