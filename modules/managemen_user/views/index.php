@@ -7,7 +7,7 @@
                         <div class="card-header d-flex justify-content-between">
                             <h5 style="color: #FFFFFF; font-weight: 600;">Managemen User</h5>
                             <div class="dropdown">
-                                <button class="btn btn-plus" type="button" data-bs-toggle="modal" data-bs-target="#modalTambahKategori">
+                                <button class="btn btn-plus" type="button" data-bs-toggle="modal" data-bs-target="#modalManagemenUser">
                                     <i class="fa-duotone fa-plus text-white"></i>
                                 </button>
                             </div>

@@ -20,6 +20,12 @@
             </a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('managemen_video') ?>">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Managemen Video</span>
+            </a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="<?= site_url('video/koleksi') ?>">
                 <i class="fas fa-fw fa-user-alt"></i>
                 <span>Koleksi Video Saya</span>

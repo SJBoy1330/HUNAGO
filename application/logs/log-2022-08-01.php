@@ -305,3 +305,49 @@ ERROR - 2022-08-01 16:31:02 --> 404 Page Not Found: ../../modules/managemen_user
 ERROR - 2022-08-01 16:31:02 --> 404 Page Not Found: ../../modules/managemen_user/controllers//index
 ERROR - 2022-08-01 16:31:02 --> 404 Page Not Found: /index
 ERROR - 2022-08-01 16:31:02 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:00:11 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:12 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:23 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:24 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:24 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:24 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:24 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:25 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:25 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:56 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:57 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:57 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:57 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:57 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:58 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:58 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:00:58 --> Severity: Notice --> Undefined property: CI::$path_theme C:\xampp\htdocs\oitoc\hunago\application\third_party\MX\Controller.php 73
+ERROR - 2022-08-01 17:07:10 --> 404 Page Not Found: ../../modules/managemen_video/controllers//index
+ERROR - 2022-08-01 17:07:10 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:07:10 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:39:51 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:39:51 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:40:14 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:40:14 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:40:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:40:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:41:49 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:41:50 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:01 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:02 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:04 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:04 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:05 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:05 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:20 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:21 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:21 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:22 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:22 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:22 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:23 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:23 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:32 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:42:32 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:44:19 --> 404 Page Not Found: /index
+ERROR - 2022-08-01 17:44:19 --> 404 Page Not Found: /index

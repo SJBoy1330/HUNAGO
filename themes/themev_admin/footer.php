@@ -92,9 +92,67 @@
                     <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Kategori Video</label>
                     <input type="text" class="form-control" placeholder="Masukkan kategori video">
                 </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
+                <button type="button" class="btn btn-primary">Iya</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalManagemenVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Tambah Managemen Video</h5>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Judul</label>
+                    <input type="text" class="form-control" placeholder="Masukkan judul">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Kategori</label>
+                    <select class="form-select js-kategori" aria-label="Default select example" placeholder="Pilih kategori">
+                        <option selected>Pilih kategori</option>
+                        <option value="1">Video Mix</option>
+                        <option value="2">Kartun</option>
+                        <option value="3">Game</option>
+                    </select>
+                </div>
                 <div class="mb-3 d-flex flex-column">
                     <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Role</label>
-                    <select class="form-select js-role" aria-label="Default select example" placeholder="Pilih kategori">
+                    <select class="form-select js-role" aria-label="Default select example" placeholder="Pilih role">
+                        <option selected>Pilih role</option>
+                        <option value="1">Superadmin</option>
+                        <option value="2">Admin</option>
+                        <option value="3">Content</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
+                <button type="button" class="btn btn-primary">Iya</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalManagemenUser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Tambah Managemen User</h5>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Judul</label>
+                    <input type="text" class="form-control" placeholder="Masukkan judul">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Role</label>
+                    <select class="form-select js-role" aria-label="Default select example" placeholder="Pilih role">
                         <option selected>Pilih role</option>
                         <option value="1">Superadmin</option>
                         <option value="2">Admin</option>
@@ -147,6 +205,10 @@
 
     $(document).ready(function() {
         $('.js-role').select2();
+    });
+
+    $(document).ready(function() {
+        $('.js-kategori').select2();
     });
 </script>
 </body>
