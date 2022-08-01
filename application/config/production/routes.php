@@ -51,6 +51,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 
+$route['managemen_user'] = 'managemen_user/backend_ctl';
+$route['managemen_user/(:any)'] = 'managemen_user/backend_ctl/$1';
+$route['managemen_user/(:any)/(:any)'] = 'managemen_user/backend_ctl/$1/$2';
+
 $route['kategori_video'] = 'kategori_video/backend_ctl';
 $route['kategori_video/(:any)'] = 'kategori_video/backend_ctl/$1';
 $route['kategori_video/(:any)/(:any)'] = 'kategori_video/backend_ctl/$1/$2';

@@ -5,7 +5,7 @@
                 <div class="col-12">
                     <div class="card" style="background-color: #1c1c1c;">
                         <div class="card-header d-flex justify-content-between">
-                            <h5 style="color: #FFFFFF; font-weight: 600;">Kategori Video</h5>
+                            <h5 style="color: #FFFFFF; font-weight: 600;">Managemen User</h5>
                             <div class="dropdown">
                                 <button class="btn btn-plus" type="button" data-bs-toggle="modal" data-bs-target="#modalTambahKategori">
                                     <i class="fa-duotone fa-plus text-white"></i>
@@ -17,14 +17,16 @@
                                 <thead>
                                     <tr>
                                         <th scope="col" style="width: 50px;">No</th>
-                                        <th scope="col">Nama Kategori</th>
+                                        <th scope="col">Nama User</th>
+                                        <th scope="col">Role</th>
                                         <th scope="col">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row">1</th>
-                                        <td>Game Petualangan Aksi</td>
+                                        <td>Jhon Doe</td>
+                                        <td>Superadmin</td>
                                         <td>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
@@ -32,7 +34,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">2</th>
-                                        <td>Musik Mix</td>
+                                        <td>Max Smith</td>
+                                        <td>Admin</td>
                                         <td>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
@@ -40,7 +43,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">3</th>
-                                        <td>Kartun</td>
+                                        <td>Stephane Olivier</td>
+                                        <td>Content Creator</td>
                                         <td>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
@@ -48,7 +52,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">4</th>
-                                        <td>Film</td>
+                                        <td>Xavier Xavirius</td>
+                                        <td>Writer</td>
                                         <td>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
@@ -56,7 +61,8 @@
                                     </tr>
                                     <tr>
                                         <th scope="row">5</th>
-                                        <td>Animasi</td>
+                                        <td>Kratos</td>
+                                        <td>Managemen</td>
                                         <td>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
                                             <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>

@@ -35,6 +35,9 @@ h6 {
 #wrapper #content-wrapper .container-fluid {
   padding: 30px 30px 30px 30px;
 }
+#wrapper #content-wrapper .container-fluid.admin {
+  padding: 30px 30px 30px 255px;
+}
 .sidebar-toggled #wrapper #content-wrapper .container-fluid {
   padding: 30px 30px 30px 121px;
 }
@@ -1599,6 +1602,14 @@ button.btn.btn-login:hover{
   transition: all 0.1s ease-in-out;
 }
 
+a.btn.btn-tambah-kategori{
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  color: white;
+  background: #FF0000;
+  transition: all 0.1s ease-in-out;
+}
+
 .modal-dialog .modal-content{
   border-radius: 10px;
 }
@@ -1689,4 +1700,19 @@ div.col-12.vector-kosong{
     align-items: center;
     flex-wrap: wrap;
   }
+}
+
+.table td, .table th {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+
+button.btn-plus{
+  background-color: transparent;
+}
+
+button.btn-plus:hover{
+  background-color: #74c9f9;
+  transition: all 0.1s ease-in-out;
 }

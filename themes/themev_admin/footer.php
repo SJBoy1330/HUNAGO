@@ -81,6 +81,35 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
+<div class="modal fade" id="modalTambahKategori" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Tambah Kategori Video</h5>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Kategori Video</label>
+                    <input type="text" class="form-control" placeholder="Masukkan kategori video">
+                </div>
+                <div class="mb-3 d-flex flex-column">
+                    <label for="exampleFormControlInput1" class="form-label mb-1" style="font-size: 15px;">Role</label>
+                    <select class="form-select js-role" aria-label="Default select example" placeholder="Pilih kategori">
+                        <option selected>Pilih role</option>
+                        <option value="1">Superadmin</option>
+                        <option value="2">Admin</option>
+                        <option value="3">Content</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
+                <button type="button" class="btn btn-primary">Iya</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -114,6 +143,10 @@
 <script>
     $(document).ready(function() {
         $('.js-example-basic-single').select2();
+    });
+
+    $(document).ready(function() {
+        $('.js-role').select2();
     });
 </script>
 </body>

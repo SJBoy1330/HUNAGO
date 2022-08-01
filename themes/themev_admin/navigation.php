@@ -2,7 +2,7 @@
 
     <ul class="sidebar navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="<?= site_url() ?>">
+            <a class="nav-link" href="<?= site_url('dashboard') ?>">
                 <i class="fas fa-fw fa-home"></i>
                 <span>Home</span>
             </a>
@@ -11,6 +11,12 @@
             <a class="nav-link" href="<?= site_url('kategori_video') ?>">
                 <i class="fas fa-fw fa-users"></i>
                 <span>Kategori</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="<?= site_url('managemen_user') ?>">
+                <i class="fas fa-fw fa-users"></i>
+                <span>Managemen User</span>
             </a>
         </li>
         <li class="nav-item">

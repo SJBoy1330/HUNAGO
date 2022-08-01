@@ -24,6 +24,9 @@ class Backend_ctl extends MY_Mimin
         // LOAD PARENT
         $mydata['parent'] = 'Dashboard';
 
+        // LOAD CSS 
+        $this->data['css_add'][] = '<link rel="stylesheet" href="' . base_url('assets/css/page/dashboard.css') . '">';
+
         // DEKLARASI VARIABEL
         $param['arrjoin']['video_kategori']['statement'] = 'video.id_kategori = video_kategori.id_kategori';
         $param['arrjoin']['video_kategori']['type'] = 'LEFT';
