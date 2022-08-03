@@ -52,7 +52,6 @@ class Backend_ctl extends MY_Mimin
     }
     public function tambah_video()
     {
-        $arrVar['judul']    = 'Judul';
         $arrVar['url'] = 'Url';
         $arrVar['id_kategori'] = 'Kategori';
         foreach ($arrVar as $var => $value) {
@@ -75,6 +74,7 @@ class Backend_ctl extends MY_Mimin
                 echo json_encode($data);
                 exit;
             }
+            $set['judul'] =  explode('</title>', explode('<title>', file_get_contents($url))[1])[0];
             $id = get_id_yt($url);
             $set['thumbnail'] = 'https://img.youtube.com/vi/' . $id . '/0.jpg';
             $set['create_by'] = $this->id_user;

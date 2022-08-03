@@ -53,7 +53,7 @@
 									</div>
 								</div>
 								<?php foreach ($result as $row) : ?>
-									<div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>">
+									<div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>" style="height : 300px">
 										<div class="video-card">
 											<div class="video-card-image">
 												<a class="play-icon" href="<?= $row->url; ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
@@ -61,7 +61,7 @@
 											</div>
 											<div class="video-card-body">
 												<div class="video-title">
-													<a href="<?= site_url('video/single') ?>"><?= $row->judul; ?></a>
+													<a href="<?= site_url('video/single') ?>"><?= tampil_text($row->judul, 40); ?></a>
 												</div>
 												<div class="video-page text-success">
 													<?= $row->kategori; ?>
@@ -98,10 +98,6 @@
 				<h5 class="modal-title" id="modalLoginLabel">Tambah Video</h5>
 			</div>
 			<form method="post" action="<?= base_url('dashboard/tambah_video'); ?>" id="tambah_video" class="modal-body">
-				<div class="mb-3" id="req_judul">
-					<label for="judul_video" class="form-label mb-1" style="font-size: 15px;">Judul video</label>
-					<input type="text" class="form-control" name="judul" id="judul_video" placeholder="Masukkan Judul" autocomplete="off">
-				</div>
 				<div class="mb-3" id="req_url">
 					<label for="link_video" class="form-label mb-1" style="font-size: 15px;">Link video</label>
 					<input type="text" class="form-control" id="link_video" name="url" placeholder="Masukkan Url" autocomplete="off">

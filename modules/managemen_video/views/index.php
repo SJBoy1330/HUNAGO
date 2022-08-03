@@ -51,10 +51,6 @@
                 <h5 class="modal-title" id="modalLoginLabel">Tambah Video</h5>
             </div>
             <form method="post" action="<?= base_url('managemen_video/tambah_video'); ?>" id="tambah_video" class="modal-body">
-                <div class="mb-3" id="req_judul">
-                    <label for="judul_video" class="form-label mb-1" style="font-size: 15px;">Judul video</label>
-                    <input type="text" class="form-control" name="judul" id="judul_video" placeholder="Masukkan Judul" autocomplete="off">
-                </div>
                 <div class="mb-3" id="req_url">
                     <label for="link_video" class="form-label mb-1" style="font-size: 15px;">Link video</label>
                     <input type="text" class="form-control" id="link_video" name="url" placeholder="Masukkan Url" autocomplete="off">
