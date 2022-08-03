@@ -13,63 +13,65 @@
                             </div>
                         </div>
                         <div class="card-body mx-3">
-                            <table class="table table-borderless text-center text-white">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" style="width: 50px;">No</th>
-                                        <th scope="col">Nama User</th>
-                                        <th scope="col">Role</th>
-                                        <th scope="col">Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Jhon Doe</td>
-                                        <td>Superadmin</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Max Smith</td>
-                                        <td>Admin</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Stephane Olivier</td>
-                                        <td>Content Creator</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Xavier Xavirius</td>
-                                        <td>Writer</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Kratos</td>
-                                        <td>Managemen</td>
-                                        <td>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                            <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-borderless text-center text-white">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: 50px;">No</th>
+                                            <th scope="col" style="min-width: 170px;">Nama User</th>
+                                            <th scope="col" style="min-width: 170px;">Role</th>
+                                            <th scope="col" style="min-width: 170px;">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Jhon Doe</td>
+                                            <td>Superadmin</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Max Smith</td>
+                                            <td>Admin</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Stephane Olivier</td>
+                                            <td>Content Creator</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>Xavier Xavirius</td>
+                                            <td>Writer</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>Kratos</td>
+                                            <td>Managemen</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

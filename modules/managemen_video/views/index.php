@@ -13,30 +13,32 @@
                             </div>
                         </div>
                         <div class="card-body mx-3" id="parent_video">
-                            <table class="table table-borderless text-center text-white" id="reload_video">
-                                <tbody>
-                                    <?php if ($result) : ?>
-                                        <?php $no = 1;
-                                        foreach ($result as $row) : ?>
+                            <div class="table-responsive">
+                                <table class="table table-borderless text-center text-white" id="reload_video">
+                                    <tbody>
+                                        <?php if ($result) : ?>
+                                            <?php $no = 1;
+                                            foreach ($result as $row) : ?>
+                                                <tr>
+                                                    <td style="width: 50px;"><img src="<?= $row->thumbnail; ?>" alt="" width="70" style="border-radius: 8px;"></td>
+                                                    <td class="text-left" style="min-width: 170px;">
+                                                        <h6 class="mb-0" style="font-weight: 600;"><?= $row->judul; ?></h6>
+                                                        <p class="text-secondary mb-0"><?= $row->kategori; ?></p>
+                                                    </td>
+                                                    <td style="min-width: 170px;">
+                                                        <button class="btn btn-md btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                        <a href="<?= base_url('managemen_video/hapus_video/' . $row->id_video) ?>" class="btn btn-md btn-light"><i class="fa-duotone fa-trash"></i></a>
+                                                    </td>
+                                                </tr>
+                                            <?php endforeach; ?>
+                                        <?php else : ?>
                                             <tr>
-                                                <td style="width: 50px;"><img src="<?= $row->thumbnail; ?>" alt="" width="70" style="border-radius: 8px;"></td>
-                                                <td class="text-left">
-                                                    <h6 class="mb-0" style="font-weight: 600;"><?= $row->judul; ?></h6>
-                                                    <p class="text-secondary mb-0"><?= $row->kategori; ?></p>
-                                                </td>
-                                                <td>
-                                                    <button class="btn btn-md btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                    <a href="<?= base_url('managemen_video/hapus_video/' . $row->id_video) ?>" class="btn btn-md btn-light"><i class="fa-duotone fa-trash"></i></a>
-                                                </td>
+                                                <td colspan="3">Tidak ada video tersedia</td>
                                             </tr>
-                                        <?php endforeach; ?>
-                                    <?php else : ?>
-                                        <tr>
-                                            <td colspan="3">Tidak ada video tersedia</td>
-                                        </tr>
-                                    <?php endif; ?>
-                                </tbody>
-                            </table>
+                                        <?php endif; ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

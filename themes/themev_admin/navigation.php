@@ -1,5 +1,4 @@
 <div id="wrapper">
-
     <ul class="sidebar navbar-nav">
         <li class="nav-item  <?= (set_active($this->uri->segment(1), 'dashboard', $this->uri->segment(2), array())) ?>">
             <a class="nav-link" href="<?= site_url('dashboard') ?>">

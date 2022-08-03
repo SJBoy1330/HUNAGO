@@ -13,36 +13,38 @@
                             </div>
                         </div>
                         <div class="card-body mx-3" id="parent_kategori">
-                            <table class="table table-borderless text-center text-white" id="reload_kategori">
-                                <thead>
-                                    <tr>
-                                        <th scope="col" style="width: 50px;">No</th>
-                                        <th scope="col">Nama Kategori</th>
-                                        <th scope="col">Aksi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php if ($result) : ?>
-                                        <?php $no = 1;
-                                        foreach ($result as $row) : ?>
+                            <div class="table-responsive">
+                                <table class="table table-borderless text-center text-white" id="reload_kategori">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="width: 50px;">No</th>
+                                            <th scope="col" style="min-width: 170px;">Nama Kategori</th>
+                                            <th scope="col" style="min-width: 170px;">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php if ($result) : ?>
+                                            <?php $no = 1;
+                                            foreach ($result as $row) : ?>
+                                                <tr>
+                                                    <th scope="row"><?= $no++; ?></th>
+                                                    <td><?= $row->nama; ?></td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-light" onclick="edit(<?= $row->id_kategori; ?>)"><i class="fa-duotone fa-pen-to-square"></i></button>
+                                                        <a href="<?= base_url('kategori_video/hapus_kategori/' . $row->id_kategori) ?>" class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></a>
+                                                    </td>
+                                                </tr>
+                                            <?php endforeach; ?>
+                                        <?php else : ?>
                                             <tr>
-                                                <th scope="row"><?= $no++; ?></th>
-                                                <td><?= $row->nama; ?></td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-light" onclick="edit(<?= $row->id_kategori; ?>)"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                    <a href="<?= base_url('kategori_video/hapus_kategori/' . $row->id_kategori) ?>" class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></a>
+                                                <td colspan="3">
+                                                    <center>Tidak ada data kategori</center>
                                                 </td>
                                             </tr>
-                                        <?php endforeach; ?>
-                                    <?php else : ?>
-                                        <tr>
-                                            <td colspan="3">
-                                                <center>Tidak ada data kategori</center>
-                                            </td>
-                                        </tr>
-                                    <?php endif; ?>
-                                </tbody>
-                            </table>
+                                        <?php endif; ?>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>

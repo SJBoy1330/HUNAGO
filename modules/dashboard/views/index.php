@@ -87,7 +87,6 @@
 				<?= vector_default(base_url('assets/img/vector/vector_video.svg'), 'Tidak ada video', 'Klik tombol pada pojok kanan bawah untuk menambahkan video!', 'vector_video', $cnt); ?>
 			</div>
 		</div>
-
 	</div>
 </div>
 

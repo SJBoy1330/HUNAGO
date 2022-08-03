@@ -20,7 +20,6 @@
 </footer> -->
 <!-- Button trigger modal -->
 <!-- Modal -->
-
 </div>
 
 </div>

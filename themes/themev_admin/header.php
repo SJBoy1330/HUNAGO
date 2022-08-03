@@ -67,3 +67,27 @@
             </li>
         </ul>
     </nav>
+
+    <nav class="navbar navbar-expand navbar-light bg-white navigation-mobile py-3 px-3">
+        <div class="wrapper-navigation-mobile">
+            <a href="<?= site_url('dashboard') ?>" class="link-navigation-mobile">
+                <i class="fa-light fa-house" style="font-size: 15px;"></i>
+                <span>Dashboard</span>    
+            </a>
+            <a href="<?= site_url('kategori_video') ?>" class="link-navigation-mobile">
+                <i class="fa-light fa-bookmark" style="font-size: 15px;"></i>
+                <span>Kategori</span>    
+            </a>
+            <a data-bs-toggle="modal" data-bs-target="#modalTambahVideo" class="link-navigation-mobile tambah-video">
+                <i class="fa-solid fa-plus" style="font-size: 15px; color: white;"></i>   
+            </a>
+            <a href="<?= site_url('managemen_user') ?>" class="link-navigation-mobile">
+                <i class="fa-light fa-users" style="font-size: 15px;"></i>
+                <span>User</span>    
+            </a>
+            <a href="<?= site_url('managemen_video') ?>" class="link-navigation-mobile">
+                <i class="fa-light fa-video" style="font-size: 15px;"></i>
+                <span>Video</span>    
+            </a>
+        </div>
+    </nav>
