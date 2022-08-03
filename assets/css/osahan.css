@@ -1768,3 +1768,23 @@ nav.navigation-mobile{
       font-size: 10px;
   }
 }
+
+.row.filter{
+  position: fixed;
+  z-index: 1;
+  top: 85px;
+  width: 100%;
+  background-color: #121212;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.row.filter-welcome{
+  position: fixed;
+  z-index: 1;
+  top: 75px;
+  width: 100%;
+  background-color: #121212;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}

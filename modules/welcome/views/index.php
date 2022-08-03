@@ -21,7 +21,7 @@
                 <?php if ($result) : ?>
                     <div class="top-category section-padding">
                         <?php if ($kategori) : ?>
-                            <div class="row">
+                            <div class="row filter-welcome">
                                 <div class="col-md-12">
                                     <div class="scrollmenu mb-4 base_tipe">
                                         <a onclick="get_kategori(this,'all')">
@@ -39,7 +39,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <hr>
                         <?php endif; ?>
                         <hr>
                         <div class="video-block section-padding" id="parenting_tipe">

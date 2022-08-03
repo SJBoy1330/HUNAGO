@@ -8,8 +8,8 @@
         </li>
         <li class="nav-item <?= (set_active($this->uri->segment(1), 'kategori_video', $this->uri->segment(2), array())) ?>">
             <a class="nav-link" href="<?= site_url('kategori_video') ?>">
-                <i class="fa-duotone fa-bookmark"></i>
-                <span>Kategori</span>
+                <i class="fa-duotone fa-bookmark" style="padding-left: 3px;"></i>
+                <span style="padding-left: 5px;">Kategori</span>
             </a>
         </li>
         <li class="nav-item <?= (set_active($this->uri->segment(1), 'managemen_user', $this->uri->segment(2), array())) ?>">

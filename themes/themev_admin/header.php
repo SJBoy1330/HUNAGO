@@ -40,10 +40,10 @@
         <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0 d-none" id="sidebarToggle">
             <i class="fas fa-bars"></i>
         </button>
-        <a class="navbar-brand mr-1" href="<?= site_url() ?>"><img class="img-fluid" alt="" src="<?= base_url('assets/img/logo_2.svg') ?>" width="110"></a>
+        <a class="navbar-brand mr-1" href="<?= site_url('dashboard') ?>"><img class="img-fluid" alt="" src="<?= base_url('assets/img/logo_2.svg') ?>" width="110"></a>
 
         <form class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
-            <div class="input-group" style="width: 70vw;">
+            <div class="input-group" style="width: 50vw; margin-left: 10px;">
                 <input type="text" class="form-control" placeholder="Pencarian...">
                 <div class="input-group-append">
                     <button class="btn btn-light" type="button">

@@ -1,5 +1,5 @@
 <div id="content-wrapper">
-	<div class="container-fluid admin pb-0">
+	<div class="container-fluid admin pb-0" style="padding-top: 0px;">
 		<div class="top-mobile-search">
 			<div class="row">
 				<div class="col-md-12">
@@ -19,14 +19,15 @@
 		<a data-bs-toggle="modal" data-bs-target="#modalTambahVideo" class="avatar avatar-60 shadow-lg rounded-circle avatar-presensi-solid avatar-kontak position-fixed">
 			<i class="fa-solid fa-plus-large text-white" style="font-size: 20px;"></i>
 		</a>
+		<div class="wrapper-kosong"></div>
 		<div id="parent_video">
 			<div id="reload_video">
 				<?php if ($result) : ?>
 					<div class="top-category section-padding">
 						<?php if ($kategori) : ?>
-							<div class="row">
+							<div class="row filter">
 								<div class="col-md-12">
-									<div class="scrollmenu mb-4 base_tipe">
+									<div class="scrollmenu base_tipe">
 										<a onclick="get_kategori(this,'all')">
 											<div class="tag tipe active">
 												<span class="text-uppercase">Semua</span>
@@ -42,7 +43,6 @@
 									</div>
 								</div>
 							</div>
-							<hr>
 						<?php endif; ?>
 						<hr>
 						<div class="video-block section-padding" id="parenting_tipe">
