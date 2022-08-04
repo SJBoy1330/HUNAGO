@@ -53,8 +53,8 @@
 									</div>
 								</div>
 								<?php foreach ($result as $row) : ?>
-									<div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>" style="height : 300px">
-										<div class="video-card">
+									<div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>">
+										<div class="video-card dashboard">
 											<div class="video-card-image">
 												<a class="play-icon" href="<?= $row->url; ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
 												<a href="#"><img class="img-fluid" src="<?= $row->thumbnail; ?>" alt=""></a>

@@ -1078,6 +1078,14 @@ h6 {
   background: #1c1c1c none repeat scroll 0 0;
   border-radius: 2px;
   transition-duration: 0.4s;
+  height: 375px;
+}
+
+.video-card.dashboard{
+  background: #1c1c1c none repeat scroll 0 0;
+  border-radius: 2px;
+  transition-duration: 0.4s;
+  height: 325px;
 }
 
 .video-card-body {
@@ -2140,6 +2148,6 @@ nav.navigation-mobile {
   top: 70px;
   width: 100%;
   background-color: #121212;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 5px;
 }

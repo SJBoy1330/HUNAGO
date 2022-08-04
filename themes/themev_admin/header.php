@@ -9,7 +9,7 @@
     <meta name="author" content="Hunago">
     <title>HUNAGO | <?= $pagetitle; ?></title>
 
-    <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.svg') ?>">
     <!-- bootstrap icons -->
     <link href="<?= base_url("assets/vendor/bootstrap-5/css/bootstrap.min.css") ?>" rel="stylesheet">
 

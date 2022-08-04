@@ -9,7 +9,7 @@
     <meta name="author" content="Hunago">
     <title>HUNAGO | <?= $pagetitle; ?></title>
 
-    <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.svg') ?>">
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
