@@ -86,13 +86,6 @@
 
 <script src="<?= base_url("assets/js/page/function.js") ?>"></script>
 
-
-
-<script>
-    $(document).ready(function() {
-        $('.js-example-basic-single').select2();
-    });
-</script>
 <?php
 
 if (isset($js_add) && is_array($js_add)) {

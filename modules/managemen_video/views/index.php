@@ -26,8 +26,8 @@
                                                         <p class="text-secondary mb-0"><?= $row->kategori; ?></p>
                                                     </td>
                                                     <td style="min-width: 170px;">
-                                                        <button class="btn btn-md btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                        <a href="<?= base_url('managemen_video/hapus_video/' . $row->id_video) ?>" class="btn btn-md btn-light"><i class="fa-duotone fa-trash"></i></a>
+                                                        <button class="btn btn-sm aksi"><i class="fa-duotone fa-pen-to-square p-2" style="color: #FFFFFF;"></i></button>
+                                                        <a href="<?= base_url('managemen_video/hapus_video/' . $row->id_video) ?>" class="btn btn-sm aksi"><i class="fa-duotone fa-trash p-2" style="color: #FFFFFF;"></i></a>
                                                     </td>
                                                 </tr>
                                             <?php endforeach; ?>

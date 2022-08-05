@@ -95,11 +95,11 @@
             <div class="modal-body">
                 <div class="mb-3" id="req_username">
                     <label for="username" class="form-label mb-1" style="font-size: 15px;">Username</label>
-                    <input type="text" name="username" class="form-control" id="username" placeholder="Masukkan username" autocomplete="off">
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Masukkan username" autocomplete="off" style="color: #FFFFFF;">
                 </div>
                 <div class="mb-3" id="req_kata_sandi">
                     <label for="kata_sandi" class="form-label mb-1" style="font-size: 15px;">Kata sandi</label>
-                    <input type="password" name="kata_sandi" class="form-control" id="kata_sandi" placeholder="Masukkan kata sandi" autocomplete="off">
+                    <input type="password" name="kata_sandi" class="form-control" id="kata_sandi" placeholder="Masukkan kata sandi" autocomplete="off" style="color: #FFFFFF;">
                 </div>
             </div>
             <div class="modal-footer">

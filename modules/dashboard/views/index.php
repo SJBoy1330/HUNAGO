@@ -1,5 +1,5 @@
 <div id="content-wrapper">
-	<div class="container-fluid admin pb-0" style="padding-top: 0px;">
+	<div class="container-fluid admin pb-0" style="padding-top: 60px;">
 		<div class="top-mobile-search">
 			<div class="row search-dashboard">
 				<div class="col-md-12">
@@ -99,11 +99,11 @@
 			<form method="post" action="<?= base_url('dashboard/tambah_video'); ?>" id="tambah_video" class="modal-body">
 				<div class="mb-3" id="req_url">
 					<label for="link_video" class="form-label mb-1" style="font-size: 15px;">Link video</label>
-					<input type="text" class="form-control" id="link_video" name="url" placeholder="Masukkan Url" autocomplete="off">
+					<input type="text" class="form-control" id="link_video" name="url" placeholder="Masukkan Url" autocomplete="off" style="color: #FFFFFF;">
 				</div>
 				<div class="mb-3 d-flex flex-column" id="req_id_kategori">
 					<label for="kategori" class="form-label mb-1" style="font-size: 15px;">Kategori</label>
-					<select class="form-select js-example-basic-single" name="id_kategori" id="kategori" aria-label="Default select example" placeholder="Pilih kategori">
+					<select class="form-select js_kat" name="id_kategori" id="kategori" aria-label="Default select example" placeholder="Pilih kategori">
 						<?php if ($kategori) : ?>
 							<option value="">Pilih kategori</option>
 							<?php foreach ($kategori as $row) : ?>
@@ -122,3 +122,9 @@
 		</div>
 	</div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        $('.js_kat').select2();
+    });
+</script>

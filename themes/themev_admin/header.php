@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/vendor/owl-carousel/owl.theme.css') ?>">
     <script src="https://kit.fontawesome.com/a2309adc07.js" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/a2309adc07.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <?php
     if (isset($css_add) && is_array($css_add)) {
@@ -36,15 +37,15 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top py-3 px-3">
+    <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top justify-content-between py-2 px-3">
         <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0 d-none" id="sidebarToggle">
             <i class="fas fa-bars"></i>
         </button>
         <a class="navbar-brand mr-1" href="<?= site_url('dashboard') ?>"><img class="img-fluid" alt="" src="<?= base_url('assets/img/logo_2.svg') ?>" width="110"></a>
 
         <form class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
-            <div class="input-group" style="width: 50vw; margin-left: 10px;">
-                <input type="text" class="form-control" placeholder="Pencarian...">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Telusuri..." style="width:538px; color: #FFFFFF;">
                 <div class="input-group-append">
                     <button class="btn btn-light" type="button">
                         <i class="fas fa-search" style="color: #828282 !important;"></i>
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </form>
-        <ul class="navbar-nav ml-auto osahan-right-navbar">
+        <ul class="navbar-nav osahan-right-navbar">
             <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
                 <?php if ($this->session->userdata('hunago_id_user')) : ?>
                     <a class="nav-link dropdown-toggle user-dropdown-link" href="#" role="button">

@@ -57,15 +57,15 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top py-3 px-3">
+    <nav class="navbar navbar-expand navbar-light bg-white static-top osahan-nav sticky-top justify-content-between py-2 px-3">
         <button class="btn btn-link btn-sm text-secondary order-1 order-sm-0 d-none" id="sidebarToggle">
             <i class="fas fa-bars"></i>
         </button>
         <a class="navbar-brand mr-1" href="<?= site_url() ?>"><img class="img-fluid" alt="" src="<?= base_url('assets/img/logo_2.svg') ?>" width="125"></a>
 
         <form class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
-            <div class="input-group" style="width: 70vw;">
-                <input type="text" class="form-control" placeholder="Pencarian...">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Telusuri..." style="width:538px; color: #FFFFFF;">
                 <div class="input-group-append">
                     <button class="btn btn-light" type="button">
                         <i class="fas fa-search" style="color: #828282 !important;"></i>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </form>
-        <ul class="navbar-nav ml-auto osahan-right-navbar">
+        <ul class="navbar-nav osahan-right-navbar">
             <li class="nav-item dropdown no-arrow osahan-right-navbar-user">
                 <?php if ($this->session->userdata('id_user')) : ?>
                     <a class="nav-link dropdown-toggle user-dropdown-link" href="#" role="button">

@@ -2066,9 +2066,29 @@ div.col-12.vector-kosong {
 
 .table td,
 .table th {
-  padding: 0.75rem;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   vertical-align: middle;
-  border-top: 1px solid #dee2e6;
+  /* border-top: 1px solid #dee2e6; */
+}
+
+table thead tr th.th-1{
+  width: 50px; 
+  background-color: #232323; 
+  border-radius: 10px 0px 0px 10px;
+}
+
+table thead tr th.th-2{
+  min-width: 170px; 
+  background-color: #232323;
+}
+
+table thead tr th.th-3{
+  min-width: 170px; 
+  background-color: #232323; 
+  border-radius: 0 10px 10px 0px;
 }
 
 button.btn-plus {
@@ -2135,11 +2155,11 @@ nav.navigation-mobile {
 .row.filter {
   position: fixed;
   z-index: 1;
-  top: 85px;
+  top: 69px;
   width: 100%;
   background-color: #121212;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
 }
 
 .row.search-dashboard {
@@ -2165,11 +2185,10 @@ nav.navigation-mobile {
 .row.filter-welcome {
   position: fixed;
   z-index: 1;
-  top: 70px;
+  top: 65px;
   width: 100%;
   background-color: #121212;
-  padding-top: 30px;
-  padding-bottom: 5px;
+  padding-top: 20px;
 }
 
 .col-md-12.video-terbaru{
@@ -2178,7 +2197,7 @@ nav.navigation-mobile {
 
 @media only screen and (max-width: 600px) {
   .col-md-12.video-terbaru{
-    margin-top: 100px;
+    margin-top: 110px;
   }
 
   .row.filter-welcome {
@@ -2200,4 +2219,14 @@ nav.navigation-mobile {
     padding-top: 20px;
     padding-bottom: 5px;
   }
+}
+
+button.btn.btn-sm.aksi{
+  background-color: #232323;
+  border-radius: 5px;
+}
+
+a.btn.btn-sm.aksi{
+  background-color: #232323;
+  border-radius: 5px;
 }

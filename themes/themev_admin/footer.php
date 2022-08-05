@@ -147,7 +147,6 @@
                 </div>';
 </script>
 <script src="<?= base_url('assets/vendor/rocket-loader/rocket-loader.min.js') ?>"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
 <script src="<?= base_url('assets/js/alert/sweetalert2.all.min.js') ?>"></script>

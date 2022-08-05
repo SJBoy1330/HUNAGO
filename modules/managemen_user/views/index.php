@@ -17,10 +17,10 @@
                                 <table class="table table-borderless text-center text-white">
                                     <thead>
                                         <tr>
-                                            <th scope="col" style="width: 50px;">No</th>
-                                            <th scope="col" style="min-width: 170px;">Nama User</th>
-                                            <th scope="col" style="min-width: 170px;">Role</th>
-                                            <th scope="col" style="min-width: 170px;">Aksi</th>
+                                            <th scope="col" class="th-1">No</th>
+                                            <th scope="col" class="th-2">Nama User</th>
+                                            <th scope="col" class="th-2">Role</th>
+                                            <th scope="col" class="th-3">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -29,8 +29,8 @@
                                             <td>Jhon Doe</td>
                                             <td>Superadmin</td>
                                             <td>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-pen-to-square p-2" style="color: #FFFFFF;"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-trash p-2" style="color: #FFFFFF;"></i></button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -38,8 +38,8 @@
                                             <td>Max Smith</td>
                                             <td>Admin</td>
                                             <td>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-pen-to-square p-2" style="color: #FFFFFF;"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-trash p-2" style="color: #FFFFFF;"></i></button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -47,8 +47,8 @@
                                             <td>Stephane Olivier</td>
                                             <td>Content Creator</td>
                                             <td>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-pen-to-square p-2" style="color: #FFFFFF;"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-trash p-2" style="color: #FFFFFF;"></i></button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -56,8 +56,8 @@
                                             <td>Xavier Xavirius</td>
                                             <td>Writer</td>
                                             <td>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-pen-to-square p-2" style="color: #FFFFFF;"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-trash p-2" style="color: #FFFFFF;"></i></button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -65,8 +65,8 @@
                                             <td>Kratos</td>
                                             <td>Managemen</td>
                                             <td>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-pen-to-square"></i></button>
-                                                <button class="btn btn-sm btn-light"><i class="fa-duotone fa-trash"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-pen-to-square p-2" style="color: #FFFFFF;"></i></button>
+                                                <button class="btn btn-sm aksi"><i class="fa-duotone fa-trash p-2" style="color: #FFFFFF;"></i></button>
                                             </td>
                                         </tr>
                                     </tbody>
