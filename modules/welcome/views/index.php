@@ -111,8 +111,8 @@
 </div>
 
 
-<script>
+<!-- <script>
     let w = window.innerWidth;
     let h = window.innerHeight;
     console.log(w + ' x ' + h);
-</script>
+</script> -->
