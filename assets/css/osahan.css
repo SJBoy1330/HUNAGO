@@ -532,7 +532,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .top-mobile-search {
-  margin: -16px -15px 19px -18px;
+  margin: -16px -15px 19px -7px;
 }
 
 .top-mobile-search input {
@@ -2076,7 +2076,7 @@ button.btn-plus {
 }
 
 button.btn-plus:hover {
-  background-color: #74c9f9;
+  background-color: #3E64E7;
   transition: all 0.1s ease-in-out;
 }
 
@@ -2142,6 +2142,26 @@ nav.navigation-mobile {
   padding-bottom: 15px;
 }
 
+.row.search-dashboard {
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  width: 100%;
+  background-color: #121212;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.row.search-welcome {
+  position: fixed;
+  z-index: 1;
+  top: 50px;
+  width: 100%;
+  background-color: #121212;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
 .row.filter-welcome {
   position: fixed;
   z-index: 1;
@@ -2150,4 +2170,34 @@ nav.navigation-mobile {
   background-color: #121212;
   padding-top: 30px;
   padding-bottom: 5px;
+}
+
+.col-md-12.video-terbaru{
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .col-md-12.video-terbaru{
+    margin-top: 100px;
+  }
+
+  .row.filter-welcome {
+    position: fixed;
+    z-index: 1;
+    top: 135px;
+    width: 100%;
+    background-color: #121212;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  .row.filter {
+    position: fixed;
+    z-index: 1;
+    top: 145px;
+    width: 100%;
+    background-color: #121212;
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
 }

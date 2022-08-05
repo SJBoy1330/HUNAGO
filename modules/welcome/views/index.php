@@ -1,7 +1,7 @@
 <div id="content-wrapper">
     <div class="container-fluid pt-5 pb-0">
         <div class="top-mobile-search">
-            <div class="row">
+            <div class="row search-welcome">
                 <div class="col-md-12">
                     <form class="mobile-search">
                         <div class="input-group">
@@ -43,7 +43,7 @@
                         <hr>
                         <div class="video-block section-padding" id="parenting_tipe">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 video-terbaru">
                                     <div class="main-title">
                                         <h6>Video Terbaru</h6>
                                     </div>
