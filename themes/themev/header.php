@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- jdhvwbu -->
 
 <head>
     <meta charset="utf-8">
@@ -26,7 +27,7 @@
     <script src="https://kit.fontawesome.com/a2309adc07.js" crossorigin="anonymous"></script>
 
     <style>
-        button.swal2-confirm{
+        button.swal2-confirm {
             background-color: #3E64E7;
             border: none;
             padding: 10px;
@@ -37,7 +38,7 @@
             border-radius: 5px;
         }
 
-        button.swal2-confirm:hover{
+        button.swal2-confirm:hover {
             background-color: transparent;
             border: 2px solid #3E64E7;
             color: #3E64E7;
