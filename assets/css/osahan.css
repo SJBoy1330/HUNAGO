@@ -999,6 +999,9 @@ h6 {
   border-radius: 2px;
   overflow: hidden;
   position: relative;
+}
+
+.video-card-image a.image-thumbnail{
   display: flex;
   justify-content: center;
   align-items: center;
