@@ -1085,7 +1085,7 @@ h6 {
   background: #1c1c1c none repeat scroll 0 0;
   border-radius: 2px;
   transition-duration: 0.4s;
-  height: 320px;
+  min-height: 300px;
 }
 
 .video-card.dashboard{
