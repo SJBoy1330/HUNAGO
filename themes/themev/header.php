@@ -67,11 +67,11 @@
         </button>
         <a class="navbar-brand mr-1" href="<?= site_url() ?>"><img class="img-fluid" alt="" src="<?= base_url('assets/img/logo_2.svg') ?>" width="125"></a>
 
-        <form class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+        <form <?= $search_action; ?> method="GET" class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Telusuri..." style="width:538px; color: #FFFFFF;">
+                <input type="text" name="search" value="<?= $search; ?>" class="form-control" placeholder="Telusuri..." style="width:538px; color: #FFFFFF;">
                 <div class="input-group-append">
-                    <button class="btn btn-light" type="button">
+                    <button type="submit" class="btn btn-light" type="button">
                         <i class="fas fa-search" style="color: #828282 !important;"></i>
                     </button>
                 </div>

@@ -34,21 +34,63 @@ class Welcome extends MY_Admin
         // LOAD JS
         $this->data['js_add'][] = '<script src="' . base_url() . 'assets/js/page/dashboard/dashboard.js"></script>';
         // DEKLARASI VARIABEL
+        $search = $this->input->get('search');
+        if ($search) {
+            $param['search'] = $search;
+            $param['columnsearch'][] = 'judul';
+            $mydata['search'] = $search;
+        } else {
+            $mydata['search'] = '';
+        }
+
         $param['arrjoin']['video_kategori']['statement'] = 'video.id_kategori = video_kategori.id_kategori';
         $param['arrjoin']['video_kategori']['type'] = 'LEFT';
         $param['sort'] = 'create_date';
         $param['order'] = 'DESC';
+        $param['limit'] = 8;
         $select = 'video.*,video_kategori.nama AS kategori';
         $where['aktif'] = 'Y';
+        $wheree['aktif'] = 'Y';
+        $where['status_video'] = 1;
+        $wheree['status_video'] = 2;
         // LOAD DATA 
         $result = $this->video_m->get_where_params($where, $select, $param);
+        $rekomendasi = $this->video_m->get_where_params($wheree, $select, $param);
         $kategori = $this->video_kategori_m->get_all();
 
 
         // LOAD MYDATA 
+        $mydata['rekomendasi'] = $rekomendasi;
         $mydata['result'] = $result;
         $mydata['kategori'] = $kategori;
+        $mydata['search_action'] = 'action="' . base_url('welcome/index') . '"';
         $this->data['content'] = $this->load->view('index', $mydata, true);
+
+        $this->display();
+    }
+
+    public function single($id_video = NULL)
+    {
+        // get data 
+        $param['arrjoin']['user']['statement'] = 'video.create_by = user.id_user';
+        $param['arrjoin']['user']['type'] = 'LEFT';
+        $row = $this->video_m->get_where_params(array('id_video' => $id_video), 'video.*,user.foto,user.nama AS nama_user', $param);
+        if ($this->id_user != NULL) {
+            redirect('dashboard');
+        } else {
+            if (!$row) {
+                redirect('welcome');
+            }
+        }
+        $this->data['pagetitle'] = "Single Video";
+
+        $mydata['parent'] = 'Single Video';
+
+
+
+        $mydata['row'] = $row[0];
+
+        $this->data['content'] = $this->load->view('single', $mydata, true);
 
         $this->display();
     }
