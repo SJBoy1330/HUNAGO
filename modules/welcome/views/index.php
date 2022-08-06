@@ -53,7 +53,7 @@
                                         <div class="video-card">
                                             <div class="video-card-image">
                                                 <a class="play-icon" href="<?= $row->url; ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
-                                                <a href="#"><img class="img-fluid" src="<?= $row->thumbnail; ?>" alt=""></a>
+                                                <img class="img-fluid" src="<?= $row->thumbnail; ?>" alt="">
                                             </div>
                                             <div class="video-card-body">
                                                 <div class="video-title">

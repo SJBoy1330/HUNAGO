@@ -999,6 +999,9 @@ h6 {
   border-radius: 2px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .time {
@@ -1020,6 +1023,7 @@ h6 {
 
 .video-card-image img {
   width: 100%;
+  margin: -34px;
 }
 
 .play-icon {
@@ -1078,7 +1082,7 @@ h6 {
   background: #1c1c1c none repeat scroll 0 0;
   border-radius: 2px;
   transition-duration: 0.4s;
-  height: 375px;
+  height: 320px;
 }
 
 .video-card.dashboard{
