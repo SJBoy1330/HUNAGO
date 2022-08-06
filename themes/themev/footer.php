@@ -29,6 +29,29 @@
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
 </a>
+<div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <form method="post" action="<?= base_url('welcome/login_proses') ?>" id="login_form" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">Login Hunago</h5>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3" id="req_username">
+                    <label for="username" class="form-label mb-1" style="font-size: 15px;">Username</label>
+                    <input type="text" name="username" class="form-control" id="username" placeholder="Masukkan username" autocomplete="off" style="color: #FFFFFF;">
+                </div>
+                <div class="mb-3" id="req_kata_sandi">
+                    <label for="kata_sandi" class="form-label mb-1" style="font-size: 15px;">Kata sandi</label>
+                    <input type="password" name="kata_sandi" class="form-control" id="kata_sandi" placeholder="Masukkan kata sandi" autocomplete="off" style="color: #FFFFFF;">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-tidak" data-bs-dismiss="modal">Tidak</button>
+                <button type="submit" id="button_login" onclick="submit_form(this,'#login_form',2)" class="btn btn-primary">Masuk</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm modal-dialog-centered" role="document">

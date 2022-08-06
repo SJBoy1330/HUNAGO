@@ -67,11 +67,11 @@
         </button>
         <a class="navbar-brand mr-1" href="<?= site_url('dashboard') ?>"><img class="img-fluid" alt="" src="<?= base_url('assets/img/logo_2.svg') ?>" width="110"></a>
 
-        <form class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
+        <form <?= $search_action; ?> method="GET" class="d-none d-md-inline-block form-inline mr-0 mr-md-5 my-2 my-md-0 osahan-navbar-search">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Telusuri..." style="width:538px; color: #FFFFFF;">
+                <input type="text" name="search" value="<?= $search; ?>" class="form-control" placeholder="Telusuri..." style="width:538px; color: #FFFFFF;" autocomplete="off">
                 <div class="input-group-append">
-                    <button class="btn btn-light" type="button">
+                    <button type="submit" class="btn btn-light" type="button">
                         <i class="fas fa-search" style="color: #828282 !important;"></i>
                     </button>
                 </div>
@@ -97,22 +97,22 @@
         <div class="wrapper-navigation-mobile">
             <a href="<?= site_url('dashboard') ?>" class="link-navigation-mobile">
                 <i class="fa-light fa-house" style="font-size: 15px;"></i>
-                <span>Dashboard</span>    
+                <span>Dashboard</span>
             </a>
             <a href="<?= site_url('kategori_video') ?>" class="link-navigation-mobile">
                 <i class="fa-light fa-bookmark" style="font-size: 15px;"></i>
-                <span>Kategori</span>    
+                <span>Kategori</span>
             </a>
             <a data-bs-toggle="modal" data-bs-target="#modalTambahVideo" class="link-navigation-mobile tambah-video">
-                <i class="fa-solid fa-plus" style="font-size: 15px; color: white;"></i>   
+                <i class="fa-solid fa-plus" style="font-size: 15px; color: white;"></i>
             </a>
             <a href="<?= site_url('managemen_user') ?>" class="link-navigation-mobile">
                 <i class="fa-light fa-users" style="font-size: 15px;"></i>
-                <span>User</span>    
+                <span>User</span>
             </a>
             <a href="<?= site_url('managemen_video') ?>" class="link-navigation-mobile">
                 <i class="fa-light fa-video" style="font-size: 15px;"></i>
-                <span>Video</span>    
+                <span>Video</span>
             </a>
         </div>
     </nav>

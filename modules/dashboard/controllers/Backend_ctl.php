@@ -32,6 +32,16 @@ class Backend_ctl extends MY_Mimin
         // LOAD JS
         $this->data['js_add'][] = '<script src="' . base_url() . 'assets/js/page/dashboard/dashboard.js"></script>';
         // DEKLARASI VARIABEL
+        // DEKLARASI VARIABEL
+        $search = $this->input->get('search');
+        if ($search) {
+            $param['search'] = $search;
+            $param['columnsearch'][] = 'judul';
+            $mydata['search'] = $search;
+        } else {
+            $mydata['search'] = '';
+        }
+
         $param['arrjoin']['video_kategori']['statement'] = 'video.id_kategori = video_kategori.id_kategori';
         $param['arrjoin']['video_kategori']['type'] = 'LEFT';
         $param['sort'] = 'create_date';

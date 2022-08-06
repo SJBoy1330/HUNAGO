@@ -18,7 +18,7 @@
         </div>
         <div id="parent_video">
             <div id="reload_video">
-                <?php if ($result) : ?>
+                <?php if ($result || $rekomendasi) : ?>
                     <div class="top-category section-padding">
                         <?php if ($kategori) : ?>
                             <div class="row filter-welcome">
@@ -40,36 +40,69 @@
                                 </div>
                             </div>
                         <?php endif; ?>
-                        <hr><hr>
+                        <hr>
+                        <hr>
                         <div class="video-block section-padding" id="parenting_tipe">
-                            <div class="row">
-                                <div class="col-md-12 video-terbaru">
-                                    <div class="main-title">
-                                        <h6>Video Terbaru</h6>
+                            <?php if ($rekomendasi) : ?>
+                                <div class="row">
+                                    <div class="col-md-12 video-terbaru">
+                                        <div class="main-title">
+                                            <h6>Video Rekomendasi</h6>
+                                        </div>
                                     </div>
-                                </div>
-                                <?php foreach ($result as $row) : ?>
-                                    <div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>">
-                                        <div class="video-card welcome">
-                                            <div class="video-card-image">
-                                                <a class="play-icon" href="<?= $row->url; ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
-                                                <a class="image-thumbnail" href="#"><img class="img-fluid" src="<?= $row->thumbnail; ?>" alt=""></a>
-                                            </div>
-                                            <div class="video-card-body">
-                                                <div class="video-title">
-                                                    <a href="<?= site_url('video/single') ?>"><?= $row->judul; ?></a>
+                                    <?php foreach ($rekomendasi as $row) : ?>
+                                        <div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>">
+                                            <div class="video-card welcome">
+                                                <div class="video-card-image">
+                                                    <a class="play-icon" href="<?= base_url('welcome/single/' . $row->id_video) ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
+                                                    <a class="image-thumbnail" href="#"><img class="img-fluid" src="<?= $row->thumbnail; ?>" alt=""></a>
                                                 </div>
-                                                <div class="video-page text-success">
-                                                    <?= $row->kategori; ?>
-                                                </div>
-                                                <div class="video-view">
-                                                    <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;<?= nice_time($row->create_date); ?>
+                                                <div class="video-card-body">
+                                                    <div class="video-title">
+                                                        <a href="<?= base_url('welcome/single/' . $row->id_video) ?>"><?= tampil_text($row->judul, 40); ?></a>
+                                                    </div>
+                                                    <div class="video-page text-success">
+                                                        <?= $row->kategori; ?>
+                                                    </div>
+                                                    <div class="video-view">
+                                                        <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;<?= nice_time($row->create_date); ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($result) : ?>
+                                <div class="row">
+                                    <div class="col-md-12 video-terbaru">
+                                        <div class="main-title">
+                                            <h6>Video Terbaru</h6>
+                                        </div>
                                     </div>
-                                <?php endforeach; ?>
-                            </div>
+                                    <?php foreach ($result as $row) : ?>
+                                        <div class="col-xl-3 col-sm-6 mb-3 zoom-filter showing" data-tipe="kategori-<?= $row->id_kategori; ?>">
+                                            <div class="video-card welcome">
+                                                <div class="video-card-image">
+                                                    <a class="play-icon" href="<?= base_url('welcome/single/' . $row->id_video) ?>" target="_blank"><i class="fas fa-play-circle"></i></a>
+                                                    <a class="image-thumbnail" href="#"><img class="img-fluid" src="<?= $row->thumbnail; ?>" alt=""></a>
+                                                </div>
+                                                <div class="video-card-body">
+                                                    <div class="video-title">
+                                                        <a href="<?= base_url('welcome/single/' . $row->id_video) ?>"><?= $row->judul; ?></a>
+                                                    </div>
+                                                    <div class="video-page text-success">
+                                                        <?= $row->kategori; ?>
+                                                    </div>
+                                                    <div class="video-view">
+                                                        <i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;<?= nice_time($row->create_date); ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php endforeach; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 <?php endif; ?>

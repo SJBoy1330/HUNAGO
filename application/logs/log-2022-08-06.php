@@ -266,3 +266,20 @@ ERROR - 2022-08-06 20:34:38 --> 404 Page Not Found: /index
 ERROR - 2022-08-06 20:34:38 --> 404 Page Not Found: /index
 ERROR - 2022-08-06 20:35:05 --> 404 Page Not Found: /index
 ERROR - 2022-08-06 20:35:05 --> 404 Page Not Found: /index
+ERROR - 2022-08-06 21:07:39 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 70
+ERROR - 2022-08-06 21:07:39 --> Severity: Notice --> Undefined variable: search C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 72
+ERROR - 2022-08-06 21:07:46 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 70
+ERROR - 2022-08-06 21:07:46 --> Severity: Notice --> Undefined variable: search C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 72
+ERROR - 2022-08-06 21:11:28 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 70
+ERROR - 2022-08-06 21:11:28 --> Severity: Notice --> Undefined variable: search C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 72
+ERROR - 2022-08-06 21:11:42 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 70
+ERROR - 2022-08-06 21:11:42 --> Severity: Notice --> Undefined variable: search C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 72
+ERROR - 2022-08-06 21:11:46 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 70
+ERROR - 2022-08-06 21:11:46 --> Severity: Notice --> Undefined variable: search C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 72
+ERROR - 2022-08-06 21:11:51 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 70
+ERROR - 2022-08-06 21:11:51 --> Severity: Notice --> Undefined variable: search C:\xampp\htdocs\oitoc\HUNAGO\themes\themev\header.php 72
+ERROR - 2022-08-06 21:15:08 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev_admin\header.php 70
+ERROR - 2022-08-06 21:15:10 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev_admin\header.php 70
+ERROR - 2022-08-06 21:15:33 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev_admin\header.php 70
+ERROR - 2022-08-06 21:15:37 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev_admin\header.php 70
+ERROR - 2022-08-06 21:15:41 --> Severity: Notice --> Undefined variable: search_action C:\xampp\htdocs\oitoc\HUNAGO\themes\themev_admin\header.php 70

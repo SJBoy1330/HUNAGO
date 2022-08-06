@@ -1001,7 +1001,7 @@ h6 {
   position: relative;
 }
 
-.video-card-image a.image-thumbnail{
+.video-card-image a.image-thumbnail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1085,15 +1085,16 @@ h6 {
   background: #1c1c1c none repeat scroll 0 0;
   border-radius: 2px;
   transition-duration: 0.4s;
+  min-height: 280px !important;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px){
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .video-card.welcome {
     background: #1c1c1c none repeat scroll 0 0;
     border-radius: 2px;
     transition-duration: 0.4s;
     min-height: 245px;
-  }      
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -1102,10 +1103,10 @@ h6 {
     border-radius: 2px;
     transition-duration: 0.4s;
     min-height: 245px;
-  }  
+  }
 }
 
-@media only screen  and (max-width : 1280px) {
+@media only screen and (max-width : 1280px) {
   .video-card.welcome {
     background: #1c1c1c none repeat scroll 0 0;
     border-radius: 2px;
@@ -1114,7 +1115,7 @@ h6 {
   }
 }
 
-@media only screen  and (min-width : 1280px) {
+@media only screen and (min-width : 1280px) {
   .video-card.welcome {
     background: #1c1c1c none repeat scroll 0 0;
     border-radius: 2px;
@@ -1123,20 +1124,20 @@ h6 {
   }
 }
 
-.video-card.dashboard{
+.video-card.dashboard {
   background: #1c1c1c none repeat scroll 0 0;
   border-radius: 2px;
   transition-duration: 0.4s;
-  height: 325px;
+  height: 250px !important;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px){
+@media only screen and (min-width : 320px) and (max-width : 480px) {
   .video-card.dashboard {
     background: #1c1c1c none repeat scroll 0 0;
     border-radius: 2px;
     transition-duration: 0.4s;
     min-height: 245px;
-  }      
+  }
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
@@ -1145,24 +1146,24 @@ h6 {
     border-radius: 2px;
     transition-duration: 0.4s;
     min-height: 245px;
-  }  
-}
-
-@media only screen  and (max-width : 1280px) {
-  .video-card.dashboard {
-    background: #1c1c1c none repeat scroll 0 0;
-    border-radius: 2px;
-    transition-duration: 0.4s;
-    min-height: 270px;
   }
 }
 
-@media only screen  and (min-width : 1280px) {
+@media only screen and (max-width : 1280px) {
   .video-card.dashboard {
     background: #1c1c1c none repeat scroll 0 0;
     border-radius: 2px;
     transition-duration: 0.4s;
-    min-height: 325px;
+    min-height: 250px;
+  }
+}
+
+@media only screen and (min-width : 1280px) {
+  .video-card.dashboard {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 250px !important;
   }
 }
 
@@ -2152,20 +2153,20 @@ div.col-12.vector-kosong {
   /* border-top: 1px solid #dee2e6; */
 }
 
-table thead tr th.th-1{
-  width: 50px; 
-  background-color: #232323; 
+table thead tr th.th-1 {
+  width: 50px;
+  background-color: #232323;
   border-radius: 10px 0px 0px 10px;
 }
 
-table thead tr th.th-2{
-  min-width: 170px; 
+table thead tr th.th-2 {
+  min-width: 170px;
   background-color: #232323;
 }
 
-table thead tr th.th-3{
-  min-width: 170px; 
-  background-color: #232323; 
+table thead tr th.th-3 {
+  min-width: 170px;
+  background-color: #232323;
   border-radius: 0 10px 10px 0px;
 }
 
@@ -2270,13 +2271,13 @@ nav.navigation-mobile {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .col-md-12.video-terbaru{
+  .col-md-12.video-terbaru {
     margin-top: 50px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .col-md-12.video-terbaru{
+  .col-md-12.video-terbaru {
     margin-top: 110px;
   }
 
@@ -2301,12 +2302,12 @@ nav.navigation-mobile {
   }
 }
 
-button.btn.btn-sm.aksi{
+button.btn.btn-sm.aksi {
   background-color: #232323;
   border-radius: 5px;
 }
 
-a.btn.btn-sm.aksi{
+a.btn.btn-sm.aksi {
   background-color: #232323;
   border-radius: 5px;
 }

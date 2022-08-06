@@ -9,6 +9,7 @@ class Welcome extends MY_Admin
         parent::__construct();
         // LOAD MODEL
         $this->load->model('video_m');
+        $this->load->model('video_tag_m');
         $this->load->model('video_kategori_m');
         $this->load->model('user_m');
 
@@ -74,7 +75,23 @@ class Welcome extends MY_Admin
         // get data 
         $param['arrjoin']['user']['statement'] = 'video.create_by = user.id_user';
         $param['arrjoin']['user']['type'] = 'LEFT';
-        $row = $this->video_m->get_where_params(array('id_video' => $id_video), 'video.*,user.foto,user.nama AS nama_user', $param);
+        $par['arrjoin']['tag']['statement'] = 'video_tag.id_tag = tag.id_tag';
+        $par['arrjoin']['tag']['type'] = 'LEFT';
+        $row = $this->video_m->get_where_params(array('id_video' => $id_video, 'video.aktif' => 'Y'), 'video.*,user.foto,user.nama AS nama_user', $param);
+        $tag = $this->video_tag_m->get_where_params(array('video_tag.id_video' => $id_video), 'video_tag.*,tag.nama', $par);
+        if ($tag) {
+            $no = 0;
+            foreach ($tag as $tg) {
+                $num = $no++;
+                $arr[$num] = $tg->id_tag;
+            }
+            $p['arrjoin']['video']['statement'] = 'video_tag.id_video = video.id_video';
+            $p['arrjoin']['video']['type'] = 'LEFT';
+            $p['wherein']['id_tag'] = $arr;
+            $terkait = $this->video_tag_m->get_where_params(array('video.id_video !=' => $id_video), 'video.*', $p);
+        } else {
+            $terkait = NULL;
+        }
         if ($this->id_user != NULL) {
             redirect('dashboard');
         } else {
@@ -89,6 +106,8 @@ class Welcome extends MY_Admin
 
 
         $mydata['row'] = $row[0];
+        $mydata['tag'] = $tag;
+        $mydata['terkait'] = $terkait;
 
         $this->data['content'] = $this->load->view('single', $mydata, true);
 
