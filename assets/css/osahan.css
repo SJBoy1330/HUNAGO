@@ -1081,11 +1081,46 @@ h6 {
   margin: 2px 0 0;
 }
 
-.video-card {
+.video-card.welcome {
   background: #1c1c1c none repeat scroll 0 0;
   border-radius: 2px;
   transition-duration: 0.4s;
-  min-height: 300px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px){
+  .video-card.welcome {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 245px;
+  }      
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .video-card.welcome {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 245px;
+  }  
+}
+
+@media only screen  and (max-width : 1280px) {
+  .video-card.welcome {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 270px;
+  }
+}
+
+@media only screen  and (min-width : 1280px) {
+  .video-card.welcome {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 325px;
+  }
 }
 
 .video-card.dashboard{
@@ -1093,6 +1128,42 @@ h6 {
   border-radius: 2px;
   transition-duration: 0.4s;
   height: 325px;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px){
+  .video-card.dashboard {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 245px;
+  }      
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .video-card.dashboard {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 245px;
+  }  
+}
+
+@media only screen  and (max-width : 1280px) {
+  .video-card.dashboard {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 270px;
+  }
+}
+
+@media only screen  and (min-width : 1280px) {
+  .video-card.dashboard {
+    background: #1c1c1c none repeat scroll 0 0;
+    border-radius: 2px;
+    transition-duration: 0.4s;
+    min-height: 325px;
+  }
 }
 
 .video-card-body {
