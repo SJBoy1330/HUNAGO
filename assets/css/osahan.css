@@ -2191,8 +2191,10 @@ nav.navigation-mobile {
   padding-top: 20px;
 }
 
-.col-md-12.video-terbaru{
-  margin-top: 0px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-md-12.video-terbaru{
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 600px) {

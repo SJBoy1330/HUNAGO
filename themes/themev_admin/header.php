@@ -25,6 +25,30 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+    <style>
+        button.swal2-confirm {
+            background-color: #3E64E7;
+            border: none;
+            padding: 10px;
+            font-size: 18px;
+            width: 120px;
+            color: #FFFFFF;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+
+        button.swal2-confirm:hover {
+            background-color: transparent;
+            border: 2px solid #3E64E7;
+            color: #3E64E7;
+            transition: 0.5s;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
     <?php
     if (isset($css_add) && is_array($css_add)) {
         foreach ($css_add as $css) {

@@ -43,6 +43,10 @@
             color: #3E64E7;
             transition: 0.5s;
         }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 
     <?php

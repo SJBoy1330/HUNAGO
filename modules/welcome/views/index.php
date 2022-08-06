@@ -40,7 +40,7 @@
                                 </div>
                             </div>
                         <?php endif; ?>
-                        <hr>
+                        <hr><hr>
                         <div class="video-block section-padding" id="parenting_tipe">
                             <div class="row">
                                 <div class="col-md-12 video-terbaru">
