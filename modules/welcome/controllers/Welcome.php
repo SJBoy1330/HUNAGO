@@ -19,9 +19,10 @@ class Welcome extends MY_Admin
 
     public function index()
     {
-        if ($this->role > 1) {
+        if ($this->id_user != NULL) {
             redirect('dashboard');
         }
+
         // LOAD TITLE
         $this->data['pagetitle'] = "Welcome";
 
